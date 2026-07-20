@@ -115,4 +115,4 @@ URL where you are reading this.
 ## Contact
 
 Privacy questions, requests, or concerns:
-**emmanuelbfavis@gmail.com**
+**northpixellabs@gmail.com**
