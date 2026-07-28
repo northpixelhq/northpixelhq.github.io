@@ -1,10 +1,15 @@
-# Privacy Policy — Pusoy Mobile
+# Privacy Policy — Tres – Pusoy Dos
 
 | Field | Value |
 |---|---|
-| **Version** | 1.0 |
-| **Effective date** | 2026-07-20 |
-| **Applies to** | Pusoy Mobile (working title) for Android, v1.x |
+| **Version** | 1.1 |
+| **Effective date** | 2026-07-28 |
+| **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
+
+*Version 1.1 (2026-07-28) replaces the working title "Pusoy Mobile" with
+the locked product name, names the developer, and removes the Purchases
+section — this version of the game has no shop and no purchases. No data
+practice changed.*
 
 > **The short version:** the game runs on your device, not on our
 > servers. No account, no sign-up, no personal information collected by
@@ -15,9 +20,11 @@
 
 ## Who we are
 
-Pusoy Mobile is an offline Pusoy Dos card game made by an independent
-developer. For any privacy question, write to us at the address in
-[Contact](#contact) — a person reads it.
+Tres – Pusoy Dos is an offline Pusoy Dos card game made by **North Pixel
+Labs**, an independent studio. North Pixel Labs is the developer named on
+the Google Play listing and is responsible for this policy. For any
+privacy question, write to us at the address in [Contact](#contact) — a
+person reads it.
 
 ## What we collect from you: nothing
 
@@ -73,14 +80,6 @@ non-personalized ads instead — the game itself is identical either way.
 You can change your choice later from the app's settings, and you can
 reset or delete your device's advertising ID at any time in your
 Android settings (Settings → Google → Ads).
-
-## Purchases
-
-Everything in the shop is **cosmetic only** — nothing you can buy
-affects game outcomes. Purchases are handled entirely by **Google Play
-Billing**: Google processes the payment, and we never see or store your
-payment details. Google's handling of your payment information is
-covered by [Google Play's terms and Google's Privacy Policy](https://policies.google.com/privacy).
 
 ## What we see as developers
 
