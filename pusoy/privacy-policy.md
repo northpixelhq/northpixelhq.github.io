@@ -2,14 +2,18 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.1 |
-| **Effective date** | 2026-07-28 |
+| **Version** | 1.2 |
+| **Effective date** | 2026-08-02 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.1 (2026-07-28) replaces the working title "Pusoy Mobile" with
-the locked product name, names the developer, and removes the Purchases
-section — this version of the game has no shop and no purchases. No data
-practice changed.*
+*Version 1.1 (2026-07-28) replaced the working title "Pusoy Mobile" with
+the locked product name, named the developer, and removed the Purchases
+section — this version of the game has no shop and no purchases.
+Version 1.2 (2026-08-02) is a housekeeping revision that gives that same
+text one agreed version number across our records. **No data practice
+has changed in either revision**, and nothing about what the app
+collects, what stays on your device, or how ads and your consent choice
+work is different from version 1.0.*
 
 > **The short version:** the game runs on your device, not on our
 > servers. No account, no sign-up, no personal information collected by
