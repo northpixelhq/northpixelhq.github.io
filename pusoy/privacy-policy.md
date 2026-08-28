@@ -2,25 +2,24 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.2 |
-| **Effective date** | 2026-08-02 |
+| **Version** | 1.3 |
+| **Effective date** | 2026-08-27 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.1 (2026-07-28) replaced the working title "Pusoy Mobile" with
-the locked product name, named the developer, and removed the Purchases
-section — this version of the game has no shop and no purchases.
-Version 1.2 (2026-08-02) is a housekeeping revision that gives that same
-text one agreed version number across our records. **No data practice
-has changed in either revision**, and nothing about what the app
-collects, what stays on your device, or how ads and your consent choice
-work is different from version 1.0.*
+*Version 1.3 (2026-08-27) adds the purchase disclosure now that the Shop
+and Google Play Billing are live. It explains what Google handles, what
+purchase information the app receives, what the app stores privately,
+how Android backs it up, and how Restore works. Earlier revisions and
+their history are recorded in the policy's repository.*
 
 > **The short version:** the game runs on your device, not on our
-> servers. No account, no sign-up, no personal information collected by
-> us. Your saves stay on your phone. The app has no analytics and sends
-> us nothing about how you play. Ads are the one third party — Google
-> shows an occasional ad between games, you choose whether they may be
-> personalized, and declining changes nothing about the game.
+> servers. No North Pixel Labs account, sign-up, or gameplay profile.
+> The app stores saves privately and has no gameplay analytics or North
+> Pixel Labs telemetry. Google serves the ads and handles Shop
+> payments; North Pixel Labs never receives your payment-card details.
+> The app keeps cosmetic ownership and token records in its private app
+> storage; Android may back that storage up through your Google account.
+> The Shop talks to Google Play for products, prices, purchases, and Restore.
 
 ## Who we are
 
@@ -30,33 +29,68 @@ the Google Play listing and is responsible for this policy. For any
 privacy question, write to us at the address in [Contact](#contact) — a
 person reads it.
 
-## What we collect from you: nothing
+## No account or personal profile
 
-The game has no account and no sign-up. We do not ask for, collect, or
-store your name, email address, phone number, contacts, photos,
-location, or any other personal information. There is no server of ours
-for the app to talk to.
+The game has no North Pixel Labs account and no sign-up. The app does
+not ask for or store your name, email address, phone number, contacts,
+photos, location, or personal profile. There is no North Pixel Labs
+server for the app to talk to.
 
-## What stays on your device
+## What the app stores privately
 
 - **Saved games** — your in-progress game is saved on your device so
   you can pick it up where you left off.
 - **Settings** — sound, haptics, and similar preferences.
 - **The last finished game's log** — kept on the device so you can
   attach it to a bug report if you choose to.
+- **Cosmetic progress** — your Cosmetic Token balance, owned packs,
+  milestone record, and the purchase tokens already credited are kept
+  locally so a purchase cannot be granted twice.
 
-None of this leaves your device. Uninstalling the app deletes all of
-it. We have no copy.
+These files are not uploaded to North Pixel Labs, and we have no server
+copy. Android may automatically copy eligible app-private files into the
+private backup associated with your Google account, depending on your
+device and backup settings. Google protects that backup with your Google
+account credentials; North Pixel Labs cannot read it. Reinstalling may
+restore it. Clearing the app's data deletes the on-device files and does
+not trigger that restore. Google Play separately keeps its own Shop
+purchase records, as described below.
+
+## Purchases — handled by Google Play
+
+The Shop offers cosmetic packs and Cosmetic Token bundles through
+**Google Play Billing**. Google Play displays the price and payment
+screen and processes the transaction under
+[Google's Privacy Policy](https://policies.google.com/privacy). North
+Pixel Labs does **not** receive your card number, bank details, billing
+address, or Google-account password.
+
+To grant and finish a purchase, the app receives its product ID,
+purchase status, and a Google Play purchase token. It stores entitlement
+or replay-protection information locally and sends acknowledgements or
+consumption requests back to Google Play. There is no North Pixel Labs
+purchase server and no account linking this information to a gameplay
+profile.
+
+Money-bought cosmetic packs are durable purchases: **Restore purchases**
+asks Google Play which packs the signed-in Google account owns and
+restores those entitlements on a device. Cosmetic Token bundles are
+consumable, so Restore purchases cannot return the bundle or its resulting
+Token balance. Android Auto Backup may separately bring the app's private
+wallet back after a reinstall. Clearing the app's data does not trigger
+that backup restore and permanently removes the local balance; North Pixel
+Labs cannot recover it.
 
 ## What we deliberately don't do
 
-The app contains **no analytics or tracking software** and sends no
+The app contains **no North Pixel Labs analytics** and sends no gameplay
 telemetry. That is a design decision, not an oversight. It means we
 genuinely cannot see how long you play, when you play, which features
-you use, or anything else about your sessions. We never sell or share
-player data — there is nothing to sell.
+you use, or anything else about your sessions. North Pixel Labs never
+sells player data. The Google services the app uses are disclosed in
+the Purchases and Ads sections.
 
-## Ads — the one third party
+## Ads — Google AdMob
 
 The game is free because it shows ads, served by **Google's ad service
 (AdMob)**. Ads are limited by design:
@@ -87,12 +121,12 @@ Android settings (Settings → Google → Ads).
 
 ## What we see as developers
 
-Because the app sends us nothing, everything we know arrives as
-**aggregate reporting from Google**: Google Play's developer statistics
-(installs, crash and stability rates, store ratings) and AdMob's ad
-reporting (impressions and revenue). These reports are aggregated — they
-do not identify you, and they come from Google's services, not from
-anything the app collects on our behalf.
+We receive no gameplay telemetry. Google provides aggregate Play
+statistics (such as installs, stability rates, and store ratings) and
+aggregate AdMob reports (such as impressions and revenue). For Shop
+transactions, Google Play may also make product, order, and purchase
+status records available in Play Console so we can handle delivery,
+support, and refunds. Google—not the app—handles the payment instrument.
 
 ## Children
 
@@ -101,11 +135,16 @@ at children. Ad content is configured for that audience.
 
 ## Deleting your data
 
-Your data lives only on your device, so deletion is in your hands:
-**uninstalling the app removes all saved games, settings, and logs.**
-For data collected by Google to serve ads, use your consent choice and
-your device's advertising-ID controls (above), or Google's own privacy
-tools at [myaccount.google.com](https://myaccount.google.com).
+**Uninstalling the app or clearing its data removes its current on-device
+saves, settings, logs, Token balance, entitlement cache, and replay-
+protection records.** After a reinstall, Android may restore an earlier
+app backup; clearing data alone does not trigger a restore. Money-bought
+packs may also reappear when you use Restore purchases because Google Play
+retains those purchases for the signed-in Google account. Manage Android
+backup, Play orders, and Google-held ads or purchase data through your
+device and Google account controls, including
+[myaccount.google.com](https://myaccount.google.com). North Pixel Labs
+cannot access or delete your private Android backup.
 
 ## Changes to this policy
 
