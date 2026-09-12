@@ -2,15 +2,16 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.3 |
-| **Effective date** | 2026-08-27 |
+| **Version** | 1.4 |
+| **Effective date** | 2026-09-12 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.3 (2026-08-27) adds the purchase disclosure now that the Shop
-and Google Play Billing are live. It explains what Google handles, what
-purchase information the app receives, what the app stores privately,
-how Android backs it up, and how Restore works. Earlier revisions and
-their history are recorded in the policy's repository.*
+*Version 1.4 (2026-09-12) names two things the app keeps on your device
+that earlier versions did not mention: the optional display name you can
+give yourself for same-room play, and a short technical note the app
+keeps if it hits an error, for bug reports. Neither leaves your device.
+Version 1.3 (2026-08-27) added the purchase disclosure. Earlier revisions
+and their history are recorded in the policy's repository.*
 
 > **The short version:** the game runs on your device, not on our
 > servers. No North Pixel Labs account, sign-up, or gameplay profile.
@@ -32,9 +33,13 @@ person reads it.
 ## No account or personal profile
 
 The game has no North Pixel Labs account and no sign-up. The app does
-not ask for or store your name, email address, phone number, contacts,
-photos, location, or personal profile. There is no North Pixel Labs
-server for the app to talk to.
+not ask for your email address, phone number, contacts, photos,
+location, or personal profile. It has one optional **display name** —
+the name other players see at the table when you play in the same
+room. You type it yourself, it is stored on your device with your
+settings, it travels only to the phones in that room over your local
+network, and it never reaches North Pixel Labs or any server. There is
+no North Pixel Labs server for the app to talk to.
 
 ## What the app stores privately
 
@@ -43,6 +48,15 @@ server for the app to talk to.
 - **Settings** — sound, haptics, and similar preferences.
 - **The last finished game's log** — kept on the device so you can
   attach it to a bug report if you choose to.
+- **Your display name** — if you type one in Settings, it is kept with
+  your settings and shown to the other players at your table when you
+  play in the same room over your local network. It is never sent
+  anywhere else.
+- **A short error log** — if the app hits a problem, a brief technical
+  note about what went wrong is kept on the device so you can attach it
+  to a bug report if you choose to. That note can include whatever the
+  error was about — for example the name of a phone in your room or text
+  you typed — and nothing else. It stays on your device.
 - **Cosmetic progress** — your Cosmetic Token balance, owned packs,
   milestone record, and the purchase tokens already credited are kept
   locally so a purchase cannot be granted twice.
