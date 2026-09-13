@@ -2,14 +2,17 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.4 |
-| **Effective date** | 2026-09-12 |
+| **Version** | 1.5 |
+| **Effective date** | 2026-09-13 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.4 (2026-09-12) names two things the app keeps on your device
+*Version 1.5 (2026-09-13) corrects one sentence of the previous version.
+Version 1.4 (2026-09-12) named two things the app keeps on your device
 that earlier versions did not mention: the optional display name you can
 give yourself for same-room play, and a short technical note the app
-keeps if it hits an error, for bug reports. Neither leaves your device.
+keeps if it hits an error, for bug reports. The error note never leaves
+your device. The display name is sent only to the other phones in your
+room, over your local network, and never to us or any server.
 Version 1.3 (2026-08-27) added the purchase disclosure. Earlier revisions
 and their history are recorded in the policy's repository.*
 
