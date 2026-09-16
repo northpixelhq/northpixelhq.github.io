@@ -2,11 +2,21 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.5 |
-| **Effective date** | 2026-09-13 |
+| **Version** | 1.6 |
+| **Effective date** | 2026-09-16 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.5 (2026-09-13) corrects one sentence of the previous version.
+*Version 1.6 (2026-09-16) adds one thing you can choose to turn on: an
+optional Google Play Games sign-in, which mirrors your milestones to your
+Play Games profile and backs up your progress to your own Google account.
+If your phone is already signed in to Google Play Games, Google may sign
+you in when the game starts; you can turn that off in the Google Play
+Games app. The game is complete without any of it, and the section below
+says exactly what is sent and what is not. **The sign-in arrives with the
+next app update** — until you have that update, nothing described in the
+Play Games section below happens on your device, and the rest of this
+policy is unchanged from version 1.5.
+Version 1.5 (2026-09-13) corrects one sentence of the previous version.
 Version 1.4 (2026-09-12) named two things the app keeps on your device
 that earlier versions did not mention: the optional display name you can
 give yourself for same-room play, and a short technical note the app
@@ -33,7 +43,7 @@ the Google Play listing and is responsible for this policy. For any
 privacy question, write to us at the address in [Contact](#contact) — a
 person reads it.
 
-## No account or personal profile
+## No account of ours — and one optional Google sign-in
 
 The game has no North Pixel Labs account and no sign-up. The app does
 not ask for your email address, phone number, contacts, photos,
@@ -43,6 +53,47 @@ room. You type it yourself, it is stored on your device with your
 settings, it travels only to the phones in that room over your local
 network, and it never reaches North Pixel Labs or any server. There is
 no North Pixel Labs server for the app to talk to.
+
+### Google Play Games — optional, and yours to turn off
+
+You can sign in to **Google Play Games** from the Mastery screen. You do
+not have to, nothing asks you twice, and the game is complete without
+it: every milestone, every token and every game is yours on the device
+whether you sign in or not.
+
+**If your phone is already signed in to Google Play Games, Google may
+sign you in when the game starts**, without asking again — that is how
+Play Games works on Android, not a choice this game makes for you. When
+that happens the card on the Mastery screen reads **Connected**, and the
+`SIGN IN` button on it is there for a phone that was not already signed
+in. Either way, **nothing below is sent unless you are signed in**, and
+you can sign out at any time in the Google Play Games app.
+
+**If you sign in, this is what is sent — all of it to Google, under your
+own Google account:**
+
+- **Your milestone unlocks and your progress towards them**, so they
+  appear on your Play Games profile.
+- **A backup of your progress** — your milestones, your Cosmetic Token
+  balance and your record of games played — saved to your Google
+  account so you can restore it on another phone. Google stores it; we
+  do not. Replacing what is on a phone with that backup, or replacing
+  the backup with what is on a phone, only ever happens when you tap the
+  button and confirm it.
+
+**What is not sent, and what we never see:**
+
+- We get none of it. There is no North Pixel Labs server, so none of
+  this reaches us — signing in tells us nothing and we cannot read your
+  backup.
+- Your Play Games name is shown on that one screen while you are signed
+  in, and nothing more. Neither it nor your player id is written to your
+  device or sent anywhere by us.
+- Your saved game in progress, your settings, your chosen theme and your
+  purchases are **not** in the backup.
+
+**If you change your mind**, sign out in the Google Play Games app. The
+game goes on working exactly as it did before you signed in.
 
 ## What the app stores privately
 
