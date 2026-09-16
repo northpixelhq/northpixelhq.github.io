@@ -2,20 +2,21 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.6 |
-| **Effective date** | 2026-09-16 |
+| **Version** | 1.7 |
+| **Effective date** | 2026-09-17 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.6 (2026-09-16) adds one thing you can choose to turn on: an
+*Version 1.7 (2026-09-17) names the app version that brings the optional
+Google Play Games sign-in: **version 1.18.0**. On an earlier version of
+the app, nothing described in the Play Games section below happens on
+your device. Nothing else in this policy changes.
+Version 1.6 (2026-09-16) added one thing you can choose to turn on: an
 optional Google Play Games sign-in, which mirrors your milestones to your
 Play Games profile and backs up your progress to your own Google account.
 If your phone is already signed in to Google Play Games, Google may sign
 you in when the game starts; you can turn that off in the Google Play
 Games app. The game is complete without any of it, and the section below
-says exactly what is sent and what is not. **The sign-in arrives with the
-next app update** — until you have that update, nothing described in the
-Play Games section below happens on your device, and the rest of this
-policy is unchanged from version 1.5.
+says exactly what is sent and what is not.
 Version 1.5 (2026-09-13) corrects one sentence of the previous version.
 Version 1.4 (2026-09-12) named two things the app keeps on your device
 that earlier versions did not mention: the optional display name you can
