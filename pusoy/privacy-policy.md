@@ -2,14 +2,17 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.7 |
+| **Version** | 1.8 |
 | **Effective date** | 2026-09-17 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.7 (2026-09-17) names the app version that brings the optional
+*Version 1.8 (2026-09-17) says what happens to your Google Play Games data
+when you uninstall the game or sign out, and how you can delete it.
+Nothing else in this policy changes.
+Version 1.7 (2026-09-17) named the app version that brings the optional
 Google Play Games sign-in: **version 1.18.0**. On an earlier version of
 the app, nothing described in the Play Games section below happens on
-your device. Nothing else in this policy changes.
+your device.
 Version 1.6 (2026-09-16) added one thing you can choose to turn on: an
 optional Google Play Games sign-in, which mirrors your milestones to your
 Play Games profile and backs up your progress to your own Google account.
@@ -94,7 +97,10 @@ own Google account:**
   purchases are **not** in the backup.
 
 **If you change your mind**, sign out in the Google Play Games app. The
-game goes on working exactly as it did before you signed in.
+game goes on working exactly as it did before you signed in. Signing out
+stops anything more being sent, but it does not delete what is already
+saved to your Google account; [Deleting your data](#deleting-your-data)
+says how to do that.
 
 ## What the app stores privately
 
@@ -214,6 +220,18 @@ backup, Play orders, and Google-held ads or purchase data through your
 device and Google account controls, including
 [myaccount.google.com](https://myaccount.google.com). North Pixel Labs
 cannot access or delete your private Android backup.
+
+**Uninstalling the app or clearing its data does not delete your Google
+Play Games data.** If you signed in to Google Play Games, your milestones
+on your Play Games profile and the backup of your progress stay in your
+Google account, which is what lets another phone restore them. To delete
+them, delete this game's data from your Play Games profile. On the web,
+go to [play.google.com/games/profile](https://play.google.com/games/profile)
+and open **Your data**. On your phone, use your Play Games profile
+settings. Google's own steps are at
+[Delete your Play Games data or Play Games profile](https://support.google.com/googleplay/answer/9130646).
+Google carries out that deletion. North Pixel Labs cannot, because the
+backup is stored in your Google account and never reaches us.
 
 ## Changes to this policy
 
