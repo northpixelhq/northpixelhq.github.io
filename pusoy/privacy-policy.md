@@ -2,11 +2,16 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.8 |
-| **Effective date** | 2026-09-17 |
+| **Version** | 1.9 |
+| **Effective date** | 2026-09-20 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
 
-*Version 1.8 (2026-09-17) says what happens to your Google Play Games data
+*Version 1.9 (2026-09-20) corrects one sentence about the short error log
+the app keeps for bug reports: the app itself never sends it anywhere,
+but, like the rest of what the app keeps on your phone, Android's own
+backup may copy it to your Google account if you have that turned on.
+Nothing else in this policy changes.
+Version 1.8 (2026-09-17) says what happens to your Google Play Games data
 when you uninstall the game or sign out, and how you can delete it.
 Nothing else in this policy changes.
 Version 1.7 (2026-09-17) named the app version that brings the optional
@@ -24,9 +29,11 @@ Version 1.5 (2026-09-13) corrects one sentence of the previous version.
 Version 1.4 (2026-09-12) named two things the app keeps on your device
 that earlier versions did not mention: the optional display name you can
 give yourself for same-room play, and a short technical note the app
-keeps if it hits an error, for bug reports. The error note never leaves
-your device. The display name is sent only to the other phones in your
-room, over your local network, and never to us or any server.
+keeps if it hits an error, for bug reports. The app never sends the error
+note anywhere; like the app's other private files, Android's own backup
+may copy it, as § "What the app stores privately" describes. The display
+name is sent only to the other phones in your room, over your local
+network, and never to us or any server.
 Version 1.3 (2026-08-27) added the purchase disclosure. Earlier revisions
 and their history are recorded in the policy's repository.*
 
@@ -117,7 +124,9 @@ says how to do that.
   note about what went wrong is kept on the device so you can attach it
   to a bug report if you choose to. That note can include whatever the
   error was about — for example the name of a phone in your room or text
-  you typed — and nothing else. It stays on your device.
+  you typed — and nothing else. The app never sends it anywhere;
+  Android's own backup may copy it with the app's other private files, as
+  the paragraph below describes.
 - **Cosmetic progress** — your Cosmetic Token balance, owned packs,
   milestone record, and the purchase tokens already credited are kept
   locally so a purchase cannot be granted twice.
