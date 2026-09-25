@@ -2,11 +2,17 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.9 |
-| **Effective date** | 2026-09-20 |
-| **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android, v1.x |
+| **Version** | 1.10 |
+| **Effective date** | 2026-09-25 |
+| **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad), v1.x |
 
-*Version 1.9 (2026-09-20) corrects one sentence about the short error log
+*Version 1.10 (2026-09-25) covers the game on iPhone and iPad as well as
+on Android. It adds what is different on iOS: the optional Game Center
+sign-in, which mirrors your milestones to Game Center and backs up your
+progress to your own iCloud; Shop purchases through the App Store; iOS's
+own device backup; and the tracking question iOS asks only if you choose
+personalized ads. Nothing about the game on Android changes.
+Version 1.9 (2026-09-20) corrected one sentence about the short error log
 the app keeps for bug reports: the app itself never sends it anywhere,
 but, like the rest of what the app keeps on your phone, Android's own
 backup may copy it to your Google account if you have that turned on.
@@ -40,21 +46,25 @@ and their history are recorded in the policy's repository.*
 > **The short version:** the game runs on your device, not on our
 > servers. No North Pixel Labs account, sign-up, or gameplay profile.
 > The app stores saves privately and has no gameplay analytics or North
-> Pixel Labs telemetry. Google serves the ads and handles Shop
-> payments; North Pixel Labs never receives your payment-card details.
-> The app keeps cosmetic ownership and token records in its private app
-> storage; Android may back that storage up through your Google account.
-> The Shop talks to Google Play for products, prices, purchases, and Restore.
+> Pixel Labs telemetry. Google serves the ads. The store you installed
+> from — Google Play on Android, the App Store on iPhone and iPad —
+> handles Shop payments; North Pixel Labs never receives your
+> payment-card details. The app keeps cosmetic ownership and token
+> records in its private app storage; Android may back that storage up
+> through your Google account, and iOS may include it in your device's
+> own backups, such as iCloud Backup. The Shop talks to that store for
+> products, prices, purchases, and Restore.
 
 ## Who we are
 
 Tres – Pusoy Dos is an offline Pusoy Dos card game made by **North Pixel
-Labs**, an independent studio. North Pixel Labs is the developer named on
-the Google Play listing and is responsible for this policy. For any
-privacy question, write to us at the address in [Contact](#contact) — a
-person reads it.
+Labs**, an independent studio: the developer named on the Google Play
+listing, and the studio name of the independent developer named as the
+seller on the App Store. North Pixel Labs is responsible for this
+policy, for the game on Android and on iOS. For any privacy question,
+write to us at the address in [Contact](#contact) — a person reads it.
 
-## No account of ours — and one optional Google sign-in
+## No account of ours — and one optional sign-in
 
 The game has no North Pixel Labs account and no sign-up. The app does
 not ask for your email address, phone number, contacts, photos,
@@ -67,10 +77,10 @@ no North Pixel Labs server for the app to talk to.
 
 ### Google Play Games — optional, and yours to turn off
 
-You can sign in to **Google Play Games** from the Mastery screen. You do
-not have to, nothing asks you twice, and the game is complete without
-it: every milestone, every token and every game is yours on the device
-whether you sign in or not.
+On Android, you can sign in to **Google Play Games** from the Mastery
+screen. You do not have to, nothing asks you twice, and the game is
+complete without it: every milestone, every token and every game is
+yours on the device whether you sign in or not.
 
 **If your phone is already signed in to Google Play Games, Google may
 sign you in when the game starts**, without asking again — that is how
@@ -109,6 +119,56 @@ stops anything more being sent, but it does not delete what is already
 saved to your Google account; [Deleting your data](#deleting-your-data)
 says how to do that.
 
+### Game Center — optional, and yours to turn off
+
+On iPhone and iPad, the same optional sign-in is Apple's **Game
+Center**. You can sign in from the Mastery screen. You do not have to,
+and the game is complete without it: every milestone, every token and
+every game is yours on the device whether you sign in or not.
+
+**If you have never signed in to Game Center from this game on this
+device, the game does not ask you to:** it starts a Game Center
+sign-in only when you tap `SIGN IN` on the Mastery screen. **Once you
+have signed in here, Game Center may sign you in when the game
+starts.** When you are
+signed in, the card on the Mastery screen reads **Connected**. Either
+way, **nothing below is sent unless you are signed in**, and you can
+sign out at any time in your device's Settings, under Game Center
+(this signs you out of Game Center for every game on the device).
+
+**If you sign in, this is what is sent — all of it to Apple, under your
+own Apple Account:**
+
+- **Your milestone unlocks and your progress towards them**, so they
+  appear as achievements on your Game Center profile.
+- **A backup of your progress** — your milestones, your Cosmetic Token
+  balance and your record of games played — saved as one Game Center
+  saved game in your iCloud, so you can restore it on another iPhone or
+  iPad signed in to Game Center with the same Apple Account. Apple stores it; we do not.
+  Replacing what is on a device with that backup, or replacing the
+  backup with what is on a device, only ever happens when you tap the
+  button and confirm it.
+
+**What is not sent, and what we never see:**
+
+- We get none of it. There is no North Pixel Labs server, so none of
+  this reaches us — signing in tells us nothing and we cannot read your
+  backup.
+- Your Game Center name is shown on that one screen while you are
+  signed in, and nothing more. Neither it nor your Game Center player id
+  is written to your device or sent anywhere by us.
+- Your saved game in progress, your settings, your chosen theme and your
+  purchases are **not** in the backup.
+- A Game Center backup and a Google Play Games backup are separate. The
+  game on one platform never reads the other's, so moving between
+  Android and an iPhone or iPad carries neither.
+
+**If you change your mind**, sign out in your device's Settings, under
+Game Center. The game goes on working exactly as it did before you
+signed in. Signing out stops anything more being sent, but it does not
+delete what is already saved to your Apple Account;
+[Deleting your data](#deleting-your-data) says how to do that.
+
 ## What the app stores privately
 
 - **Saved games** — your in-progress game is saved on your device so
@@ -124,9 +184,9 @@ says how to do that.
   note about what went wrong is kept on the device so you can attach it
   to a bug report if you choose to. That note can include whatever the
   error was about — for example the name of a phone in your room or text
-  you typed — and nothing else. The app never sends it anywhere;
-  Android's own backup may copy it with the app's other private files, as
-  the paragraph below describes.
+  you typed — and nothing else. The app never sends it anywhere; your
+  device's own backup, on Android or on iOS, may copy it with the app's
+  other private files, as the paragraphs below describe.
 - **Cosmetic progress** — your Cosmetic Token balance, owned packs,
   milestone record, and the purchase tokens already credited are kept
   locally so a purchase cannot be granted twice.
@@ -140,10 +200,19 @@ restore it. Clearing the app's data deletes the on-device files and does
 not trigger that restore. Google Play separately keeps its own Shop
 purchase records, as described below.
 
+On iPhone and iPad, the app keeps these files in its own private
+storage, which iOS includes in your device's own backups — iCloud
+Backup, if you have it turned on, or a backup you make on a computer.
+Apple protects an iCloud Backup with your Apple Account; North Pixel
+Labs cannot read it. The Game Center backup described above is the one
+copy the app itself writes to the cloud, and only while you are signed
+in. The App Store separately keeps its own Shop purchase records, as
+described below.
+
 ## Purchases — handled by Google Play
 
-The Shop offers cosmetic packs and Cosmetic Token bundles through
-**Google Play Billing**. Google Play displays the price and payment
+On Android, the Shop offers cosmetic packs and Cosmetic Token bundles
+through **Google Play Billing**. Google Play displays the price and payment
 screen and processes the transaction under
 [Google's Privacy Policy](https://policies.google.com/privacy). North
 Pixel Labs does **not** receive your card number, bank details, billing
@@ -165,14 +234,43 @@ wallet back after a reinstall. Clearing the app's data does not trigger
 that backup restore and permanently removes the local balance; North Pixel
 Labs cannot recover it.
 
+## Purchases on iPhone and iPad — handled by the App Store
+
+On iOS, the Shop offers the same cosmetic packs and Cosmetic Token
+bundles through **Apple's in-app purchase**. The App Store displays the
+price and payment screen and processes the transaction under
+[Apple's Privacy Policy](https://www.apple.com/legal/privacy/). North
+Pixel Labs does **not** receive your card number, bank details, billing
+address, or Apple Account password.
+
+To grant and finish a purchase, the app receives its product ID,
+purchase status, and the App Store's identifier for that transaction.
+It stores entitlement or replay-protection information locally, so a
+purchase cannot be granted twice, and tells the App Store when each
+transaction is finished. There is no North Pixel Labs purchase server
+and no account linking this information to a gameplay profile.
+
+Money-bought cosmetic packs are durable purchases: **Restore purchases**
+asks the App Store which packs your Apple Account owns and restores
+those entitlements on a device. Cosmetic Token bundles are consumable,
+so Restore purchases cannot return the bundle or its resulting Token
+balance. Deleting the app removes the local balance from the device,
+and North Pixel Labs cannot recover it; the Game Center backup, if you
+use it, carries your Token balance, as described above.
+
+A purchase belongs to the store it was made in. Packs bought through
+Google Play are restored on Android, and packs bought through the App
+Store are restored on iPhone and iPad; neither store can answer for the
+other.
+
 ## What we deliberately don't do
 
 The app contains **no North Pixel Labs analytics** and sends no gameplay
 telemetry. That is a design decision, not an oversight. It means we
 genuinely cannot see how long you play, when you play, which features
 you use, or anything else about your sessions. North Pixel Labs never
-sells player data. The Google services the app uses are disclosed in
-the Purchases and Ads sections.
+sells player data. The Google and Apple services the app uses are each
+disclosed in this policy.
 
 ## Ads — Google AdMob
 
@@ -193,15 +291,43 @@ own privacy policy — see
 [How Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites)
 and [Google's Privacy Policy](https://policies.google.com/privacy).
 
+On iPhone and iPad, the same Google ad service serves the ads, and the
+same limits apply. Google's ad software collects, under Google's own
+policy: your **approximate location**, estimated from your IP address;
+a **device identifier** — your device's advertising identifier only if
+you allow tracking (below), and otherwise identifiers limited to this
+app or its developer; how you **interact with the app and its ads**,
+such as app launches, taps and video views; **which ads you have
+seen**; and **crash and performance diagnostics**, such as launch time,
+hangs and energy use. These are the items the game's App Store privacy
+labels list, and the device identifier is the one they show as used to
+track you. The ad software collects them for Google; the game itself
+collects none of it for North Pixel Labs.
+
 ### Your consent choice
 
 On first launch, the app shows the consent message that Google's User
 Messaging Platform requires for your region. **You choose whether ads
 may be personalized. Declining is one tap.** If you decline, you see
 non-personalized ads instead — the game itself is identical either way.
-You can change your choice later from the app's settings, and you can
-reset or delete your device's advertising ID at any time in your
+You can change your choice later from the app's settings. On Android,
+you can reset or delete your device's advertising ID at any time in your
 Android settings (Settings → Google → Ads).
+
+**On iPhone and iPad, iOS may ask one more question.** Where the game
+shows its own consent screen and you choose personalized ads there, iOS
+then shows its App Tracking Transparency request, once, asking whether
+the game may track you. The game never shows it at any other moment. If
+you allow it, Google may use your device's advertising identifier to
+personalize ads; if you don't, the game requests non-personalized ads.
+Where Google's consent message is shown instead, iOS does not ask:
+Google follows the choice you make on that message, and without
+tracking permission it does not receive your device's advertising
+identifier. Either way, the game itself is identical. You can change
+your answer at any time in Settings → Privacy & Security → Tracking.
+Turning it off stops Google receiving your device's advertising
+identifier; whether ads may be personalized still follows the choice
+you made on the consent screen or message.
 
 ## What we see as developers
 
@@ -212,6 +338,12 @@ transactions, Google Play may also make product, order, and purchase
 status records available in Play Console so we can handle delivery,
 support, and refunds. Google—not the app—handles the payment instrument.
 
+On iOS, Apple provides the same kind of aggregate figures in App Store
+Connect (such as downloads, sales, and ratings), and crash and usage
+figures only from players who have chosen, in their device's settings,
+to share analytics with app developers. Apple—not the app—handles the
+payment instrument.
+
 ## Children
 
 The game is intended for players **13 and older** and is not directed
@@ -219,9 +351,9 @@ at children. Ad content is configured for that audience.
 
 ## Deleting your data
 
-**Uninstalling the app or clearing its data removes its current on-device
-saves, settings, logs, Token balance, entitlement cache, and replay-
-protection records.** After a reinstall, Android may restore an earlier
+**On Android, uninstalling the app or clearing its data removes its
+current on-device saves, settings, logs, Token balance, entitlement
+cache, and replay-protection records.** After a reinstall, Android may restore an earlier
 app backup; clearing data alone does not trigger a restore. Money-bought
 packs may also reappear when you use Restore purchases because Google Play
 retains those purchases for the signed-in Google account. Manage Android
@@ -241,6 +373,31 @@ settings. Google's own steps are at
 [Delete your Play Games data or Play Games profile](https://support.google.com/googleplay/answer/9130646).
 Google carries out that deletion. North Pixel Labs cannot, because the
 backup is stored in your Google account and never reaches us.
+
+**On iPhone and iPad, deleting the app removes everything it keeps on
+the device** — saves, settings, logs, Token balance, entitlement cache,
+and replay-protection records. Copies of those files can remain in your
+device's own backups (iCloud Backup, or a backup on a computer) until
+those backups are replaced or deleted; you manage them in your device's
+Settings or on that computer. Money-bought packs may reappear when you
+use Restore purchases, because the App Store keeps those purchases for
+your Apple Account. North Pixel Labs cannot access or delete your
+device backups.
+
+**Deleting the app does not delete your Game Center data.** If you
+signed in to Game Center, your achievements stay on your Game Center
+profile and the backup of your progress stays in your iCloud, under
+your Apple Account, which is what lets another device restore it. The
+game has no button that deletes them. To delete the backup, delete this
+game's data from your iCloud storage: in Settings, tap your name, then
+iCloud, then Storage or Manage Account Storage, and choose the game if
+it is listed. Apple's own steps are at
+[Manage your iCloud storage](https://support.apple.com/en-us/108922).
+Data Apple holds for your Apple Account, your Game Center profile
+included, is managed through Apple, including at
+[privacy.apple.com](https://privacy.apple.com). Apple carries out that
+deletion. North Pixel Labs cannot, because the backup is stored in your
+iCloud and never reaches us.
 
 ## Changes to this policy
 
