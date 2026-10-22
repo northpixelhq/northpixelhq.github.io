@@ -2,16 +2,25 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.10 |
-| **Effective date** | 2026-09-25 |
+| **Version** | 1.11 |
+| **Effective date** | 2026-10-22 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad), v1.x |
 
-*Version 1.10 (2026-09-25) covers the game on iPhone and iPad as well as
-on Android. It adds what is different on iOS: the optional Game Center
+*Version 1.11 (2026-10-22) changes how the game asks about tracking on
+iPhone and iPad. The game no longer shows its own personalized-ads choice
+there: iOS's App Tracking Transparency request asks instead, once, on
+first launch — right after Google's consent message where your region
+requires one. Wherever Google's message does not govern, your current
+answer decides: if tracking is allowed, ads may be personalized; if it is
+not, the game requests non-personalized ads — and changing it later in
+iOS Settings changes that either way. Nothing about the game on Android
+changes.
+Version 1.10 (2026-09-25) covered the game on iPhone and iPad as well as
+on Android. It added what is different on iOS: the optional Game Center
 sign-in, which mirrors your milestones to Game Center and backs up your
 progress to your own iCloud; Shop purchases through the App Store; iOS's
-own device backup; and the tracking question iOS asks only if you choose
-personalized ads. Nothing about the game on Android changes.
+own device backup; and the tracking question iOS asked then only if you
+chose personalized ads. Nothing about the game on Android changed.
 Version 1.9 (2026-09-20) corrected one sentence about the short error log
 the app keeps for bug reports: the app itself never sends it anywhere,
 but, like the rest of what the app keeps on your phone, Android's own
@@ -314,20 +323,23 @@ You can change your choice later from the app's settings. On Android,
 you can reset or delete your device's advertising ID at any time in your
 Android settings (Settings → Google → Ads).
 
-**On iPhone and iPad, iOS may ask one more question.** Where the game
-shows its own consent screen and you choose personalized ads there, iOS
-then shows its App Tracking Transparency request, once, asking whether
-the game may track you. The game never shows it at any other moment. If
-you allow it, Google may use your device's advertising identifier to
-personalize ads; if you don't, the game requests non-personalized ads.
-Where Google's consent message is shown instead, iOS does not ask:
-Google follows the choice you make on that message, and without
-tracking permission it does not receive your device's advertising
-identifier. Either way, the game itself is identical. You can change
-your answer at any time in Settings → Privacy & Security → Tracking.
-Turning it off stops Google receiving your device's advertising
-identifier; whether ads may be personalized still follows the choice
-you made on the consent screen or message.
+**On iPhone and iPad, iOS asks the question.** The game shows no
+personalized-ads choice of its own on iOS. On first launch, iOS shows its
+App Tracking Transparency request, once, asking whether the game may
+track you; where Google's consent message is required for your region,
+iOS asks right after it. The game never asks at any other moment.
+Where Google's message is not required, your answer to iOS is your
+choice: if you allow tracking, Google may use your device's advertising
+identifier to personalize ads; if you don't, the game requests
+non-personalized ads. Where Google's message is required, Google follows
+the choice you made on that message, and without tracking permission it
+does not receive your device's advertising identifier. Either way, the
+game itself is identical. You can change your answer at any time, in
+either direction, in Settings → Privacy & Security → Tracking. Where
+Google's message is not required, the game follows your current answer
+from your next ad on: turning tracking on lets ads be personalized,
+and turning it off stops Google receiving your device's advertising
+identifier and makes the game request non-personalized ads.
 
 ## What we see as developers
 
