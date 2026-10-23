@@ -2,19 +2,30 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.11 |
-| **Effective date** | 2026-10-22 |
+| **Version** | 1.12 |
+| **Effective date** | 2026-10-23 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad), v1.x |
 
-*Version 1.11 (2026-10-22) changes how the game asks about tracking on
-iPhone and iPad. The game no longer shows its own personalized-ads choice
+*Version 1.12 (2026-10-23) corrects what this policy says about changing
+your ads choice later on Android. It said you could change it from the
+app's settings. That is true only where Google's consent message is
+required for your region. Everywhere else, the game has no setting for
+it: the answer you gave on first launch stays until you clear the game's
+data, and § "Your consent choice" now says so, along with what clearing
+the data costs. It also says that declining is one tap on the game's own
+screen, while on Google's message you decline through Google's options,
+and that on iPhone and iPad, too, the game's Ad privacy settings reopen
+Google's privacy options where Google's message is required. Nothing
+about the game itself changes, on Android or on iPhone and iPad.
+Version 1.11 (2026-10-22) changed how the game asks about tracking on
+iPhone and iPad. The game stopped showing its own personalized-ads choice
 there: iOS's App Tracking Transparency request asks instead, once, on
 first launch — right after Google's consent message where your region
 requires one. Wherever Google's message does not govern, your current
 answer decides: if tracking is allowed, ads may be personalized; if it is
 not, the game requests non-personalized ads — and changing it later in
 iOS Settings changes that either way. Nothing about the game on Android
-changes.
+changed.
 Version 1.10 (2026-09-25) covered the game on iPhone and iPad as well as
 on Android. It added what is different on iOS: the optional Game Center
 sign-in, which mirrors your milestones to Game Center and backs up your
@@ -240,8 +251,10 @@ restores those entitlements on a device. Cosmetic Token bundles are
 consumable, so Restore purchases cannot return the bundle or its resulting
 Token balance. Android Auto Backup may separately bring the app's private
 wallet back after a reinstall. Clearing the app's data does not trigger
-that backup restore and permanently removes the local balance; North Pixel
-Labs cannot recover it.
+that backup restore and removes the local balance; North Pixel Labs
+cannot recover it, though the optional Google Play Games backup, if you
+use it, carries your Token balance and the game offers to restore it, as
+described above.
 
 ## Purchases on iPhone and iPad — handled by the App Store
 
@@ -315,13 +328,48 @@ collects none of it for North Pixel Labs.
 
 ### Your consent choice
 
-On first launch, the app shows the consent message that Google's User
-Messaging Platform requires for your region. **You choose whether ads
-may be personalized. Declining is one tap.** If you decline, you see
-non-personalized ads instead — the game itself is identical either way.
-You can change your choice later from the app's settings. On Android,
-you can reset or delete your device's advertising ID at any time in your
-Android settings (Settings → Google → Ads).
+**On Android, the game asks on first launch, before it opens. You
+choose whether ads may be personalized.** Where Google's User Messaging
+Platform requires a consent message for your region, the game's first
+screen hands you to Google's message and you choose there; you decline
+through Google's own options on that message (for example, **Manage
+options**, then **Confirm choices**). Everywhere else, the game asks you
+itself, with two equal buttons, and **declining is one tap: Use
+non-personalized ads.** If you decline, you see non-personalized ads
+instead — the game itself is identical either way.
+
+**Changing your choice later on Android depends on what the game's
+Settings screen shows:**
+
+- **If it shows Ad privacy settings** — it does where Google's consent
+  message is required for your region — that entry reopens Google's
+  privacy options. What you choose there applies from your next
+  ad. If Google needs to ask you again — for example, when your earlier
+  answer expires — the game shows Google's message again shortly after
+  it starts.
+- **If it does not, the game has no setting to change your answer.** It
+  keeps the answer you gave on first launch on your phone and follows it
+  for every ad. To be asked again, clear the game's data in your phone's
+  settings: Apps → Tres → Storage (or **Storage & cache** on some
+  phones), then **Clear data** or **Clear storage**; the game asks again
+  the next time it starts. Clearing the data also deletes everything
+  else the game keeps on your phone, including your Token balance, which
+  North Pixel Labs cannot recover — though if you use the optional
+  Google Play Games sign-in, its backup holds your Token balance and the
+  game offers to restore it on the Mastery screen; see
+  [Deleting your data](#deleting-your-data).
+  Uninstalling and reinstalling may not ask again, because Android's
+  backup can bring back your earlier answer with the game's other files.
+
+Wherever you are, you can also reset or delete your phone's advertising
+ID at any time in Android's own settings — on most phones under
+Settings → Privacy → Ads, or Settings → Google → Ads; the menu names
+differ between phones and Android versions. Resetting it gives your
+phone a new advertising ID. Deleting it means apps, this game's ads
+included, no longer receive one, and Google does not show you ads based
+on it, though ads may still be based on other things. Neither changes
+the answer the game keeps. Google's own steps are on
+[Google's advertising page](https://policies.google.com/technologies/ads).
 
 **On iPhone and iPad, iOS asks the question.** The game shows no
 personalized-ads choice of its own on iOS. On first launch, iOS shows its
@@ -340,6 +388,13 @@ Google's message is not required, the game follows your current answer
 from your next ad on: turning tracking on lets ads be personalized,
 and turning it off stops Google receiving your device's advertising
 identifier and makes the game request non-personalized ads.
+
+On iPhone and iPad too, where Google's consent message is required for
+your region, the game's Settings screen shows **Ad privacy settings**,
+which reopens Google's privacy options so you can change the choice you
+made on that message; what you choose there applies from your next ad.
+Your answer to iOS's tracking request is changed in iOS Settings, as
+above.
 
 ## What we see as developers
 
