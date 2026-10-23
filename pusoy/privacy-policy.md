@@ -2,21 +2,31 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.12 |
+| **Version** | 1.13 |
 | **Effective date** | 2026-10-23 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad), v1.x |
 
-*Version 1.12 (2026-10-23) corrects what this policy says about changing
-your ads choice later on Android. It said you could change it from the
-app's settings. That is true only where Google's consent message is
+*Version 1.13 (2026-10-23) corrects what this policy says is in the
+optional Google Play Games and Game Center backup. It said your
+purchases are not in the backup. Packs you bought with money are not —
+Restore purchases in the Shop brings those back. But the packs you
+bought with tokens are in the backup, and so is the store's reference
+for each Token bundle already added to your balance, which the game
+keeps so that no purchase is counted twice. Restoring the backup brings
+them back. The backup holds no payment details, and nothing about the
+game itself changes, on Android or on iPhone and iPad.
+Version 1.12 (2026-10-23) corrected what this policy said about changing
+your ads choice later on Android. It had said you could change it from
+the app's settings. That is true only where Google's consent message is
 required for your region. Everywhere else, the game has no setting for
 it: the answer you gave on first launch stays until you clear the game's
-data, and § "Your consent choice" now says so, along with what clearing
-the data costs. It also says that declining is one tap on the game's own
-screen, while on Google's message you decline through Google's options,
-and that on iPhone and iPad, too, the game's Ad privacy settings reopen
-Google's privacy options where Google's message is required. Nothing
-about the game itself changes, on Android or on iPhone and iPad.
+data, and § "Your consent choice" said so from then on, along with what
+clearing the data costs. It also said that declining is one tap on the
+game's own screen, while on Google's message you decline through
+Google's options, and that on iPhone and iPad, too, the game's Ad
+privacy settings reopen Google's privacy options where Google's message
+is required. Nothing about the game itself changed, on Android or on
+iPhone and iPad.
 Version 1.11 (2026-10-22) changed how the game asks about tracking on
 iPhone and iPad. The game stopped showing its own personalized-ads choice
 there: iOS's App Tracking Transparency request asks instead, once, on
@@ -116,11 +126,18 @@ own Google account:**
 - **Your milestone unlocks and your progress towards them**, so they
   appear on your Play Games profile.
 - **A backup of your progress** — your milestones, your Cosmetic Token
-  balance and your record of games played — saved to your Google
-  account so you can restore it on another phone. Google stores it; we
-  do not. Replacing what is on a phone with that backup, or replacing
-  the backup with what is on a phone, only ever happens when you tap the
-  button and confirm it.
+  balance, the packs you bought with tokens, and your record of games
+  played — saved to your Google account so you can restore it on another
+  phone. So that nothing is paid or counted twice, it also holds the
+  game's own notes of the token rewards it has already paid you, and
+  Google Play's reference for each Token bundle you bought that has
+  already been added to your balance. It holds no payment details.
+  Google stores it; we do not. Replacing what is on a phone with that
+  backup, or replacing the backup with what is on a phone, only ever
+  happens when you tap the button and confirm it. Restoring brings all
+  of it back: the phone's milestones, Token balance and record become
+  the backup's, and the backup's packs bought with tokens join any the
+  phone already has.
 
 **What is not sent, and what we never see:**
 
@@ -130,8 +147,10 @@ own Google account:**
 - Your Play Games name is shown on that one screen while you are signed
   in, and nothing more. Neither it nor your player id is written to your
   device or sent anywhere by us.
-- Your saved game in progress, your settings, your chosen theme and your
-  purchases are **not** in the backup.
+- Your saved game in progress, your settings and your chosen theme are
+  **not** in the backup, and neither are the packs you bought with
+  money: **Restore purchases** in the Shop brings those back by asking
+  Google Play, not the backup.
 
 **If you change your mind**, sign out in the Google Play Games app. The
 game goes on working exactly as it did before you signed in. Signing out
@@ -162,12 +181,19 @@ own Apple Account:**
 - **Your milestone unlocks and your progress towards them**, so they
   appear as achievements on your Game Center profile.
 - **A backup of your progress** — your milestones, your Cosmetic Token
-  balance and your record of games played — saved as one Game Center
-  saved game in your iCloud, so you can restore it on another iPhone or
-  iPad signed in to Game Center with the same Apple Account. Apple stores it; we do not.
-  Replacing what is on a device with that backup, or replacing the
-  backup with what is on a device, only ever happens when you tap the
-  button and confirm it.
+  balance, the packs you bought with tokens, and your record of games
+  played — saved as one Game Center saved game in your iCloud, so you
+  can restore it on another iPhone or iPad signed in to Game Center with
+  the same Apple Account. So that nothing is paid or counted twice, it
+  also holds the game's own notes of the token rewards it has already
+  paid you, and the App Store's reference for each Token bundle you
+  bought that has already been added to your balance. It holds no
+  payment details. Apple stores it; we do not. Replacing what is on a
+  device with that backup, or replacing the backup with what is on a
+  device, only ever happens when you tap the button and confirm it.
+  Restoring brings all of it back: the device's milestones, Token
+  balance and record become the backup's, and the backup's packs bought
+  with tokens join any the device already has.
 
 **What is not sent, and what we never see:**
 
@@ -177,8 +203,10 @@ own Apple Account:**
 - Your Game Center name is shown on that one screen while you are
   signed in, and nothing more. Neither it nor your Game Center player id
   is written to your device or sent anywhere by us.
-- Your saved game in progress, your settings, your chosen theme and your
-  purchases are **not** in the backup.
+- Your saved game in progress, your settings and your chosen theme are
+  **not** in the backup, and neither are the packs you bought with
+  money: **Restore purchases** in the Shop brings those back by asking
+  the App Store, not the backup.
 - A Game Center backup and a Google Play Games backup are separate. The
   game on one platform never reads the other's, so moving between
   Android and an iPhone or iPad carries neither.
@@ -251,9 +279,12 @@ restores those entitlements on a device. Cosmetic Token bundles are
 consumable, so Restore purchases cannot return the bundle or its resulting
 Token balance. Android Auto Backup may separately bring the app's private
 wallet back after a reinstall. Clearing the app's data does not trigger
-that backup restore and removes the local balance; North Pixel Labs
-cannot recover it, though the optional Google Play Games backup, if you
-use it, carries your Token balance and the game offers to restore it, as
+that backup restore and removes the local balance, along with any packs
+you bought with tokens, which Restore purchases cannot return, because they
+were bought with tokens and not from the store. North Pixel Labs cannot
+recover them, though the
+optional Google Play Games backup, if you use it, carries your Token
+balance and those packs, and the game offers to restore them, as
 described above.
 
 ## Purchases on iPhone and iPad — handled by the App Store
@@ -277,8 +308,10 @@ asks the App Store which packs your Apple Account owns and restores
 those entitlements on a device. Cosmetic Token bundles are consumable,
 so Restore purchases cannot return the bundle or its resulting Token
 balance. Deleting the app removes the local balance from the device,
-and North Pixel Labs cannot recover it; the Game Center backup, if you
-use it, carries your Token balance, as described above.
+along with any packs you bought with tokens, which Restore purchases
+cannot return, because they were bought with tokens and not from the
+store. North Pixel Labs cannot recover them; the Game Center backup, if you use it, carries your Token
+balance and those packs, as described above.
 
 A purchase belongs to the store it was made in. Packs bought through
 Google Play are restored on Android, and packs bought through the App
@@ -353,10 +386,11 @@ Settings screen shows:**
   settings: Apps → Tres → Storage (or **Storage & cache** on some
   phones), then **Clear data** or **Clear storage**; the game asks again
   the next time it starts. Clearing the data also deletes everything
-  else the game keeps on your phone, including your Token balance, which
-  North Pixel Labs cannot recover — though if you use the optional
-  Google Play Games sign-in, its backup holds your Token balance and the
-  game offers to restore it on the Mastery screen; see
+  else the game keeps on your phone, including your Token balance and
+  any packs you bought with tokens, which North Pixel Labs cannot
+  recover — though if you use the optional Google Play Games sign-in,
+  its backup holds both and the game offers to restore them on the
+  Mastery screen; see
   [Deleting your data](#deleting-your-data).
   Uninstalling and reinstalling may not ask again, because Android's
   backup can bring back your earlier answer with the game's other files.
