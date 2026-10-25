@@ -2,19 +2,25 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.13 |
-| **Effective date** | 2026-10-23 |
+| **Version** | 1.14 |
+| **Effective date** | 2026-10-25 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad), v1.x |
 
-*Version 1.13 (2026-10-23) corrects what this policy says is in the
-optional Google Play Games and Game Center backup. It said your
-purchases are not in the backup. Packs you bought with money are not —
+*Version 1.14 (2026-10-25) says that declining personalized ads on
+Google's consent message is one tap: the message has a **Do not
+consent** button. Version 1.13 said that you decline there through
+Google's options, such as Manage options, then Confirm choices; Manage
+options is still on the message. Nothing about the game itself changes,
+on Android or on iPhone and iPad.
+Version 1.13 (2026-10-23) corrected what this policy said about the
+optional Google Play Games and Game Center backup. It had said your
+purchases were not in the backup. Packs you bought with money are not —
 Restore purchases in the Shop brings those back. But the packs you
 bought with tokens are in the backup, and so is the store's reference
 for each Token bundle already added to your balance, which the game
 keeps so that no purchase is counted twice. Restoring the backup brings
 them back. The backup holds no payment details, and nothing about the
-game itself changes, on Android or on iPhone and iPad.
+game itself changed, on Android or on iPhone and iPad.
 Version 1.12 (2026-10-23) corrected what this policy said about changing
 your ads choice later on Android. It had said you could change it from
 the app's settings. That is true only where Google's consent message is
@@ -364,10 +370,9 @@ collects none of it for North Pixel Labs.
 **On Android, the game asks on first launch, before it opens. You
 choose whether ads may be personalized.** Where Google's User Messaging
 Platform requires a consent message for your region, the game's first
-screen hands you to Google's message and you choose there; you decline
-through Google's own options on that message (for example, **Manage
-options**, then **Confirm choices**). Everywhere else, the game asks you
-itself, with two equal buttons, and **declining is one tap: Use
+screen hands you to Google's message and you choose there, and
+**declining is one tap: Do not consent.** Everywhere else, the game asks
+you itself, with two equal buttons, and **declining is one tap: Use
 non-personalized ads.** If you decline, you see non-personalized ads
 instead — the game itself is identical either way.
 
