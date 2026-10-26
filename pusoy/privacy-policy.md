@@ -2,9 +2,16 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.14 |
-| **Effective date** | 2026-10-25 |
-| **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad), v1.x |
+| **Version** | 2.0 |
+| **Effective date** | 2026-10-26 |
+| **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when using Android Online; Online is not available on iOS in this release. |
+
+Version 2.0 adds optional private Online play on Android. Online creates a
+Tres profile and sends the information needed to run private rooms to our
+service. Optional Play Games protection can restore that Online profile.
+Local play, same-room Nearby play, purchases, ads choices, and the separate
+Play Games and Game Center progress features keep the behavior described
+below. Earlier version notes describe the local product before Online.
 
 *Version 1.14 (2026-10-25) says that declining personalized ads on
 Google's consent message is one tap: the message has a **Do not
@@ -79,37 +86,36 @@ network, and never to us or any server.
 Version 1.3 (2026-08-27) added the purchase disclosure. Earlier revisions
 and their history are recorded in the policy's repository.*
 
-> **The short version:** the game runs on your device, not on our
-> servers. No North Pixel Labs account, sign-up, or gameplay profile.
-> The app stores saves privately and has no gameplay analytics or North
-> Pixel Labs telemetry. Google serves the ads. The store you installed
-> from — Google Play on Android, the App Store on iPhone and iPad —
-> handles Shop payments; North Pixel Labs never receives your
-> payment-card details. The app keeps cosmetic ownership and token
-> records in its private app storage; Android may back that storage up
-> through your Google account, and iOS may include it in your device's
-> own backups, such as iCloud Backup. The Shop talks to that store for
-> products, prices, purchases, and Restore.
+**The short version:** local play runs on your device. Nearby play sends
+room information to the other phones on your local network. Optional Online
+play on Android uses our server and a private guest profile; Google sign-in
+is not required. Online has its own data, recovery and deletion rules below.
+There are no North Pixel Labs gameplay analytics or advertising uses of
+Online profile data. Google serves ads outside Online Rooms. Google Play on
+Android and the App Store on iPhone and iPad handle Shop payments; we do not
+receive payment-card details. Local saves, cosmetic ownership, token records,
+device backups and the optional Play Games/Game Center progress backups
+remain separate from your Online profile.
 
 ## Who we are
 
-Tres – Pusoy Dos is an offline Pusoy Dos card game made by **North Pixel
-Labs**, an independent studio: the developer named on the Google Play
-listing, and the studio name of the independent developer named as the
-seller on the App Store. North Pixel Labs is responsible for this
-policy, for the game on Android and on iOS. For any privacy question,
-write to us at the address in [Contact](#contact) — a person reads it.
+Tres – Pusoy Dos is made and operated by **Emmanuel Carlos Favis, trading as
+North Pixel Labs**, the independent studio named on Google Play and the
+studio of the independent developer named as seller on the App Store.
+Emmanuel Carlos Favis is responsible for deciding how the game's data is
+handled, including the optional Online service. Privacy questions and
+requests go to **northpixellabs@gmail.com** — a person reads them.
 
-## No account of ours — and one optional sign-in
+## Local play needs no account; Online has a private profile
 
-The game has no North Pixel Labs account and no sign-up. The app does
-not ask for your email address, phone number, contacts, photos,
-location, or personal profile. It has one optional **display name** —
-the name other players see at the table when you play in the same
-room. You type it yourself, it is stored on your device with your
-settings, it travels only to the phones in that room over your local
-network, and it never reaches North Pixel Labs or any server. There is
-no North Pixel Labs server for the app to talk to.
+Local and Nearby play need no North Pixel Labs account or sign-up. The app
+does not ask for your email address, phone number, contacts, photos or
+location to play. The display name in Settings is used for same-room play:
+it stays on your device and travels only to the phones in that room over
+your local network. Android Online separately asks for a display name and
+creates a server profile after your agreement. Its name, codes and other
+data are explained under **Online on Android — optional private rooms**.
+Home and Nearby do not contact the Online service.
 
 ### Google Play Games — optional, and yours to turn off
 
@@ -147,12 +153,14 @@ own Google account:**
 
 **What is not sent, and what we never see:**
 
-- We get none of it. There is no North Pixel Labs server, so none of
-  this reaches us — signing in tells us nothing and we cannot read your
-  backup.
-- Your Play Games name is shown on that one screen while you are signed
-  in, and nothing more. Neither it nor your player id is written to your
-  device or sent anywhere by us.
+- The milestone mirror and progress backup go to Google, not to North Pixel
+  Labs; we cannot read that backup. Online does not upload its credentials
+  or live Games into it.
+- This local progress feature shows your Play Games name on the Mastery
+  screen and keeps neither that name nor your player ID on your device.
+  Separately choosing **Protect with Play Games** or **Restore online
+  profile** sends a verification code to our service and lets it verify
+  your Play Games player ID for recovery, as the Online section explains.
 - Your saved game in progress, your settings and your chosen theme are
   **not** in the backup, and neither are the packs you bought with
   money: **Restore purchases** in the Shop brings those back by asking
@@ -203,9 +211,9 @@ own Apple Account:**
 
 **What is not sent, and what we never see:**
 
-- We get none of it. There is no North Pixel Labs server, so none of
-  this reaches us — signing in tells us nothing and we cannot read your
-  backup.
+- These milestones and the progress backup go to Apple, not to North Pixel
+  Labs; we cannot read your iCloud backup. Game Center does not create or
+  protect a Tres Online profile. Online is unavailable on iOS in this release.
 - Your Game Center name is shown on that one screen while you are
   signed in, and nothing more. Neither it nor your Game Center player id
   is written to your device or sent anywhere by us.
@@ -230,10 +238,11 @@ delete what is already saved to your Apple Account;
 - **Settings** — sound, haptics, and similar preferences.
 - **The last finished game's log** — kept on the device so you can
   attach it to a bug report if you choose to.
-- **Your display name** — if you type one in Settings, it is kept with
-  your settings and shown to the other players at your table when you
-  play in the same room over your local network. It is never sent
-  anywhere else.
+- **Your same-room display name** — if you type one in Settings, it is kept
+  with your settings and shown to other players in your room over your local
+  network. That local-play name is not sent to our service. The separately
+  chosen Online display name is part of the Online profile described below.
+
 - **A short error log** — if the app hits a problem, a brief technical
   note about what went wrong is kept on the device so you can attach it
   to a bug report if you choose to. That note can include whatever the
@@ -245,8 +254,9 @@ delete what is already saved to your Apple Account;
   milestone record, and the purchase tokens already credited are kept
   locally so a purchase cannot be granted twice.
 
-These files are not uploaded to North Pixel Labs, and we have no server
-copy. Android may automatically copy eligible app-private files into the
+The local-play files listed above are not uploaded to North Pixel Labs,
+and we have no server copy. Android Online keeps separate private credentials
+and caches, with the different backup and retention rules below. Android may automatically copy eligible app-private files into the
 private backup associated with your Google account, depending on your
 device and backup settings. Google protects that backup with your Google
 account credentials; North Pixel Labs cannot read it. Reinstalling may
@@ -262,6 +272,145 @@ Labs cannot read it. The Game Center backup described above is the one
 copy the app itself writes to the cloud, and only while you are signed
 in. The App Store separately keeps its own Shop purchase records, as
 described below.
+
+## Online on Android — optional private rooms
+
+Online is optional. Choosing Online contacts our service to check availability.
+A profile is created only after you enter a display name, agree to the Online
+Terms/privacy disclosure and the app securely saves a private credential.
+You can decline and continue with local or Nearby play. Google sign-in is not
+required. Online is unavailable on iPhone and iPad in this release.
+
+**What we process and why.** We keep a Tres account ID, Player Code, filtered
+display name and accepted Terms version; security checks derived from your
+private credential; and the app/platform/protocol/rules versions needed for
+compatibility and authenticated access. The private credential is sent over
+encrypted transport for verification; the server keeps a keyed hash rather
+than the raw credential. The app stores its credential in encrypted private
+storage excluded from cloud and device-transfer backups.
+
+Room settings, membership, invitations, join requests, game state, moves,
+reconnection state and completed Results let us operate and recover private
+Games. Blocks, fixed-reason reports, request outcomes and limited security
+records support moderation, prevent duplicate actions and unauthorized access,
+and ensure a backup cannot revive a deleted profile. Network addresses are
+processed to deliver traffic and briefly limit abuse; they are not written
+to our service logs. Bounded aggregate counters help the operator assess
+service usage and cost. These are service operations, not advertising profiles.
+
+We process the information necessary to provide the Online service you
+request. Optional Play Games linkage is based on your explicit choice.
+Limited moderation and security processing serves our legitimate interest
+in protecting players and the service, subject to your rights. You may stop
+using Online, remove the recovery link or request deletion; the bounded
+security and backup exceptions still apply.
+
+**Who can see what.** A join request shares your name and Player Code with
+the Organizer; you see their name/code and advertised settings. An invitation
+recipient sees the Organizer and settings before accepting. Only admitted
+members see the room roster and receive its game information. Each player
+gets their own private hand while a Game is live. At a natural end, original
+participants can download the deal and action history for Result and Review;
+they can keep or share material already received. Interrupted Games do not
+release a completed replay. Other players' downloaded/shared copies cannot
+be recalled by deleting your profile. Public codes never prove identity.
+
+Reports contain a fixed reason and bounded public context, not private hands
+or free text. The reporter can see their report's status. The operator can
+review reports and apply moderation, with restricted, audited access; support
+and moderation do not grant arbitrary access to private Games. A fresh guest
+installation can have another code, so blocks are not verified-person bans.
+
+**Optional Play Games protection.** Only an explicit Protect or Restore
+operation sends a single-use Google authorization code to our backend. It
+exchanges that code with Google and verifies which player ID belongs to this
+game. We keep a keyed hash of that game-specific identity as the recovery
+link, not a Google email address, password, raw player ID or retained Google
+access/refresh token. We do not request extra email, profile or OpenID access
+for this feature. Verification tokens are discarded after checking, and
+normal Online entry, joining and reconnection do not call Google for recovery.
+Google handles its part under [Google's Privacy Policy](https://policies.google.com/privacy).
+
+This link restores the same retained Tres profile and Player Code after
+installation loss; it is not a copy of local progress or a live Game.
+Restore replaces the old installation's Online access. Unlink removes only
+the Tres recovery link. It does not revoke the game's Google permission or
+delete the Google account, achievements or separate progress backup. Revoking
+Google access separately may affect those local Play Games features too.
+Neither unlink nor deletion uploads private Online credentials to a backup.
+
+**Hosting, security and transfers.** North Pixel Labs operates the service
+using DigitalOcean infrastructure. The server, hourly database backup storage
+and independent security/deletion journal use DigitalOcean's Singapore region
+(SGP1); weekly server images are stored in the server's datacenter. The owner
+operates the service from the Philippines. Thus Online data is processed
+outside your device and may cross national borders. DigitalOcean supplies
+hosting/storage on our behalf; Google separately verifies optional recovery
+and provides the services described elsewhere in this policy. Their applicable
+terms and processing arrangements also govern their services; selecting a
+Singapore region is not a promise that all provider operations worldwide
+occur only there.
+
+Online transport is encrypted with TLS; the server's private Game records and
+hourly database backups are encrypted at rest. **Private weekly whole-server
+images may be unencrypted at rest.** They are restricted to the operator and
+expire within 28 days. There is no blanket promise that every copy is encrypted.
+Restoration must apply current deletions and revocations before allowing Online
+access. If that cannot be established, access stays closed. Application/proxy
+logs exclude request bodies, authentication headers, raw identifiers, codes,
+credentials and IP addresses. Local diagnostic logs and Nearby traffic have
+the separate behavior described earlier; this TLS statement covers Online.
+
+**How long Online data lasts.** These are maximum service retention bounds,
+not a promise that every record remains available for the entire period.
+
+| Information | Retention and purpose |
+|---|---|
+| Profile, name, Player Code, Terms and private-root hash | Unprotected profile/root: 90 days without successful credential renewal. Protected profile: 365 days since successful renewal, Protect or Restore; the root still has a 90-day limit. Profile expiry starts live purge within 24 hours. |
+| Session credential hashes and creation retry records | Sessions at most 24 hours, never beyond root expiry; revoked session hashes at most 24 hours. Creation retry binding stays while the profile exists. |
+| Optional recovery link and operations | Link until unlink/profile expiry/deletion. An operation lasts 10 minutes and verified proof at most 5 minutes within it; outcome status 7 days; used verification-code hashes 10 minutes. Replaced-root hashes last 35 days to prevent rollback. |
+| Invitations, join requests and cooldowns | Pending invitations 10 minutes; requests 2 minutes; terminal records/cooldowns at most 24 hours. |
+| Blocks and room removal records | Blocks until profile expiry/deletion; removed-player records until that room closes. |
+| Room membership, private Game state and command outcomes | Live room and at most 7 days after termination; command outcomes 7 days. Retained Games involving a deleted profile are removed within 24 hours. |
+| Completed replay and Result on the server | Original participants only, at most 7 days; deleted participants lose access. Copies already downloaded cannot be recalled. |
+| Private credential and caches on this installation | Credential until deletion, key loss or expiry. Cached profile/current-room pointer at most 30 days; one Result at most 30 days or replacement; hand layout until at most 24 hours after termination. Caches never prove access and are cleared on deletion or definitive identity loss. |
+| Reports | 90 days; profile links removed within 24 hours of deletion, with deletion-specific pseudonyms retained only to the original report expiry. |
+| Security audit | 30 days, limited to reason/time/opaque ID; profile link removed within 24 hours of deletion. |
+| Logs and operational counters | Identifier-free logs 7 days; IP rate buckets in memory at most 1 hour; account/global quota counters at most 24 hours; fixed-label aggregate counters 90 days. |
+| Deletion/security replay journal, deleted-ID/hash/code reservations | 35 days from the operation/request, for deletion-aware restoration and revocation. No raw credentials. The private deletion-status receipt expires 35 days from preparation; an unsubmitted preparation lasts 5 minutes. |
+| Backups and restricted recovery diagnostics | Encrypted hourly database backups at most 30 days; private, possibly unencrypted weekly whole-server images at most 28 days; restricted recovery-failure diagnostics 7 days without tokens or extra private Game copies. |
+
+Successful normal credential renewal refreshes the root and the corresponding
+profile deadline. Protect and Restore also refresh both. Removing protection
+sets the profile and credential to expire after 90 days without further
+renewal. A code lookup, failed proof or status retry cannot extend retention.
+Restoring a profile does not extend any room/Game lifetime. A profile already
+deleted or expired cannot be restored with Play Games.
+
+**Deleting Online data.** In **Online profile**, choose **Delete online
+profile** and confirm using this installation's existing private access.
+Preparation alone does not delete anything. An accepted request revokes access,
+removes the recovery link, ends live Games, and schedules live profile and
+associated Game-data purge within 24 hours. We retain only the bounded report,
+audit, replay-journal and backup exceptions above for moderation, security
+and reliable erasure after restoration, not to continue the profile.
+
+The app clears Online credentials and caches and can retain a status-only
+receipt. **Completed** means the live purge finished; it does not mean every
+backup copy has expired. The app shows separate live-purge and backup dates.
+Reinstalling loses that receipt; a public code cannot recover it. Restoring
+backups cannot make an acknowledged deletion or old access valid again.
+Deletion leaves local saves, purchases, Google/Apple accounts and separate
+progress backups alone. Contact their providers for data they hold separately.
+
+If the installation credential is lost, a previously protected profile can
+be restored and then deleted before its expiry. An unprotected lost profile
+cannot be claimed or deleted by presenting its public code, display name or
+an email; inactivity expiry still applies. You may request deletion or raise
+another privacy concern at **northpixellabs@gmail.com** without the app. We
+will explain what can be verified and the available route. Do not email
+private access credentials or deletion receipts. Uninstalling or merely
+stopping Online does not itself request deletion.
 
 ## Purchases — handled by Google Play
 
@@ -326,12 +475,13 @@ other.
 
 ## What we deliberately don't do
 
-The app contains **no North Pixel Labs analytics** and sends no gameplay
-telemetry. That is a design decision, not an oversight. It means we
-genuinely cannot see how long you play, when you play, which features
-you use, or anything else about your sessions. North Pixel Labs never
-sells player data. The Google and Apple services the app uses are each
-disclosed in this policy.
+The app contains no North Pixel Labs gameplay analytics. Local play does
+not send gameplay telemetry to us. Online sends the profile, requests and
+game actions needed to run the service; it keeps the bounded operational
+and security records described below. We can therefore see Online service
+records and aggregate room/Game activity, but we do not build a marketing
+profile or use Online data for advertising. North Pixel Labs never sells
+player data. Google and Apple services are disclosed separately in this policy.
 
 ## Ads — Google AdMob
 
@@ -344,6 +494,9 @@ The game is free because it shows ads, served by **Google's ad service
   exchange for a cosmetic token, or you don't. Nothing in the game is
   ever locked behind an ad.
 - **Offline, there are no ads at all**, and the game is fully playable.
+
+**There are no ads in Online Rooms, including between Games.** Online
+profile and Play Games recovery data are not used for advertising.
 
 To serve and measure ads, Google may collect data from your device,
 such as your device's **advertising ID**, **IP address**, and **basic
@@ -399,6 +552,10 @@ Settings screen shows:**
   [Deleting your data](#deleting-your-data).
   Uninstalling and reinstalling may not ask again, because Android's
   backup can bring back your earlier answer with the game's other files.
+  If you have used Online, clearing app data also loses this installation's
+  Online credential and caches. Only a previously protected Online profile
+  can be restored with Play Games; the local-progress backup does not hold
+  that credential. Clearing data does not request server-profile deletion.
 
 Wherever you are, you can also reset or delete your phone's advertising
 ID at any time in Android's own settings — on most phones under
@@ -437,7 +594,8 @@ above.
 
 ## What we see as developers
 
-We receive no gameplay telemetry. Google provides aggregate Play
+We receive no local-gameplay telemetry. The optional Android Online service
+processes Online activity and bounded operating records as described below. Google provides aggregate Play
 statistics (such as installs, stability rates, and store ratings) and
 aggregate AdMob reports (such as impressions and revenue). For Shop
 transactions, Google Play may also make product, order, and purchase
@@ -456,6 +614,14 @@ The game is intended for players **13 and older** and is not directed
 at children. Ad content is configured for that audience.
 
 ## Deleting your data
+
+**Android Online has a separate server profile.** Uninstalling, clearing
+app data, deleting a Google Play Games backup or signing out does not delete
+that profile. Use **Online profile → Delete online profile** and confirm,
+or contact **northpixellabs@gmail.com** to request help or deletion from
+outside the app. The Online section explains proof of access, lost-device
+limits, live erasure, backup expiry and retained security records. Deleting
+the Online profile leaves local saves, purchases and provider progress alone.
 
 **On Android, uninstalling the app or clearing its data removes its
 current on-device saves, settings, logs, Token balance, entitlement
@@ -515,5 +681,26 @@ URL where you are reading this.
 
 ## Contact
 
-Privacy questions, requests, or concerns:
+Privacy questions, data-rights requests and concerns:
+**Emmanuel Carlos Favis — North Pixel Labs**
+**Privacy contact and Data Protection Officer: Emmanuel Carlos Favis**
 **northpixellabs@gmail.com**
+
+You may request information about or access to your data, correction,
+objection or withdrawal of consent, erasure or blocking, and portability
+where applicable. We need to establish that a request concerns your data
+before disclosing or changing a profile. Do not email private credentials,
+Google passwords, deletion receipts or unnecessary identity documents.
+The Online section explains the limits where a private credential is lost.
+You may also raise a concern with the Philippine
+[National Privacy Commission](https://privacy.gov.ph/data-subject-rights/).
+These rights and any applicable conditions are not waived by using the game.
+
+If you email us, we receive your email address, message and any attachments
+you choose to send. We use them to respond to and handle your request.
+We keep necessary correspondence while resolving the case, then delete
+those messages and attachments from our mailbox and its Trash within
+90 days after the case is closed. Our contact mailbox uses Gmail; Google
+processes email under [Google's Privacy Policy](https://policies.google.com/privacy).
+This mailbox schedule is separate from the Online report/security schedule
+and does not set Google's own service retention periods.
