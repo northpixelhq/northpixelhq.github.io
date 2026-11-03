@@ -2,9 +2,18 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.1 |
-| **Effective date** | 2026-10-31 |
+| **Version** | 2.2 |
+| **Effective date** | 2026-11-03 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when using Android Online; Online is not available on iOS in this release. |
+
+Version 2.2 (2026-11-03) adds one Online detail. Online now keeps, on your
+device only, a short list of players you recently shared a room with — each
+one's display name and Player Code — so you can invite them again without
+retyping a code. It holds at most 6 players, and each player drops off 30
+days after they were last added to it. The list itself is never sent to our
+service; tapping Invite beside a player sends their Player Code, as typing it
+would. You can remove any player from it. It is cleared when you delete your
+Online profile, start fresh or restore one. Nothing else changes.
 
 Version 2.1 (2026-10-31) adds two Online details. First, the app may attach
 a random session tag to its Online requests so that, when something goes
@@ -384,7 +393,7 @@ not a promise that every record remains available for the entire period.
 | Blocks and room removal records | Blocks until profile expiry/deletion; removed-player records until that room closes. |
 | Room membership, private Game state and command outcomes | Live room and at most 7 days after termination; command outcomes 7 days. Retained Games involving a deleted profile are removed within 24 hours. |
 | Completed replay and Result on the server | Original participants only, at most 7 days; deleted participants lose access. Copies already downloaded cannot be recalled. |
-| Private credential and caches on this installation | Credential until deletion, key loss or expiry. Cached profile/current-room pointer at most 30 days; one Result at most 30 days or replacement; hand layout until at most 24 hours after termination. Until the app reaches our service after it starts (for example, when it is opened offline), these ages are measured by this device's clock, so a clock set back can make a cache look younger than it is. Caches never prove access and are cleared on deletion or definitive identity loss. |
+| Private credential and caches on this installation | Credential until deletion, key loss or expiry. Cached profile/current-room pointer at most 30 days; one Result at most 30 days or replacement; hand layout until at most 24 hours after termination. Recent players: the display names and Player Codes of at most 6 players you shared a room with, each dropped 30 days after it was last added; the list itself is never sent to our service (tapping Invite beside a player sends their Player Code, as typing it would), and you can remove any player from it. Until the app reaches our service after it starts (for example, when it is opened offline), these ages are measured by this device's clock, so a clock set back can make a cache look younger than it is. Caches never prove access and are cleared on deletion or definitive identity loss. |
 | Reports | 90 days; profile links removed within 24 hours of deletion, with deletion-specific pseudonyms retained only to the original report expiry. |
 | Security audit | 30 days, limited to reason/time/opaque ID; profile link removed within 24 hours of deletion. |
 | Logs and operational counters | Logs 7 days, without account, room or request identifiers. A log line may carry a random session tag that the app creates for each app session and replaces at least daily and whenever your Online profile changes; it lets the operator follow one app session's steps, for up to the 7 days logs are kept, when diagnosing a problem. It is never stored with your profile. IP rate buckets in memory at most 1 hour; account/global quota counters at most 24 hours; fixed-label aggregate counters 90 days. |
