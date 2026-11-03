@@ -2,9 +2,15 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.2 |
+| **Version** | 2.3 |
 | **Effective date** | 2026-11-03 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when using Android Online; Online is not available on iOS in this release. |
+
+Version 2.3 adds one Online detail. During an Online game you can tap a quick
+expression: one of a fixed set of emoji and short phrases written by us. You
+cannot type your own. Our service passes it to the other players in your room
+as you send it and does not keep it; its logs may note that one was sent and
+whether it was passed on, never which one. Nothing else changes.
 
 Version 2.2 (2026-11-03) adds one Online detail. Online now keeps, on your
 device only, a short list of players you recently shared a room with — each
@@ -310,12 +316,18 @@ storage excluded from cloud and device-transfer backups.
 
 Room settings, membership, invitations, join requests, game state, moves,
 reconnection state and completed Results let us operate and recover private
-Games. Blocks, fixed-reason reports, request outcomes and limited security
-records support moderation, prevent duplicate actions and unauthorized access,
-and ensure a backup cannot revive a deleted profile. Network addresses are
-processed to deliver traffic and briefly limit abuse; they are not written
-to our service logs. Bounded aggregate counters help the operator assess
-service usage and cost. These are service operations, not advertising profiles.
+Games. Quick expressions you tap during a Game — a fixed set of emoji and
+short phrases written by us, never text you type — are passed by our service
+to the other players in that room as you send them. The service does not store
+them: it holds the time of your last one for about a second, to space them
+out, and its logs may note that one was sent and whether it was passed on,
+never which one. Blocks, fixed-reason reports, request outcomes and limited
+security records support moderation, prevent duplicate actions and
+unauthorized access, and ensure a backup cannot revive a deleted profile.
+Network addresses are processed to deliver traffic and briefly limit abuse;
+they are not written to our service logs. Bounded aggregate counters help the
+operator assess service usage and cost. These are service operations, not
+advertising profiles.
 
 We process the information necessary to provide the Online service you
 request. Optional Play Games linkage is based on your explicit choice.
@@ -324,14 +336,16 @@ in protecting players and the service, subject to your rights. You may stop
 using Online, remove the recovery link or request deletion; the bounded
 security and backup exceptions still apply.
 
-**Who can see what.** A join request shares your name and Player Code with
-the Organizer; you see their name/code and advertised settings. An invitation
+**Who can see what.** A join request shares your name and Player Code with the
+Organizer; you see their name/code and advertised settings. An invitation
 recipient sees the Organizer and settings before accepting. Only admitted
-members see the room roster and receive its game information. Each player
-gets their own private hand while a Game is live. At a natural end, original
-participants can download the deal and action history for Result and Review;
-they can keep or share material already received. Interrupted Games do not
-release a completed replay. Other players' downloaded/shared copies cannot
+members see the room roster and receive its game information. The other
+players in your room see the quick expressions you send, next to your seat.
+Each player can mute anyone's on their own device; muting tells no one. Each
+player gets their own private hand while a Game is live. At a natural end,
+original participants can download the deal and action history for Result and
+Review; they can keep or share material already received. Interrupted Games do
+not release a completed replay. Other players' downloaded/shared copies cannot
 be recalled by deleting your profile. Public codes never prove identity.
 
 Reports contain a fixed reason and bounded public context, not private hands
@@ -392,6 +406,7 @@ not a promise that every record remains available for the entire period.
 | Invitations, join requests and cooldowns | Pending invitations 10 minutes; requests 2 minutes; terminal records/cooldowns at most 24 hours. |
 | Blocks and room removal records | Blocks until profile expiry/deletion; removed-player records until that room closes. |
 | Room membership, private Game state and command outcomes | Live room and at most 7 days after termination; command outcomes 7 days. Retained Games involving a deleted profile are removed within 24 hours. |
+| Quick expressions | Not stored: passed to the other players in the room as they are sent. The time of your last one is held in memory for about a second, to space them out. Logs may note that one was sent and whether it was passed on, never which one, for the 7 days logs are kept. |
 | Completed replay and Result on the server | Original participants only, at most 7 days; deleted participants lose access. Copies already downloaded cannot be recalled. |
 | Private credential and caches on this installation | Credential until deletion, key loss or expiry. Cached profile/current-room pointer at most 30 days; one Result at most 30 days or replacement; hand layout until at most 24 hours after termination. Recent players: the display names and Player Codes of at most 6 players you shared a room with, each dropped 30 days after it was last added; the list itself is never sent to our service (tapping Invite beside a player sends their Player Code, as typing it would), and you can remove any player from it. Until the app reaches our service after it starts (for example, when it is opened offline), these ages are measured by this device's clock, so a clock set back can make a cache look younger than it is. Caches never prove access and are cleared on deletion or definitive identity loss. |
 | Reports | 90 days; profile links removed within 24 hours of deletion, with deletion-specific pseudonyms retained only to the original report expiry. |
