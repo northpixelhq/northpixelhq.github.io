@@ -2,9 +2,13 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.0 |
-| **Effective date** | 2026-10-26 |
+| **Version** | 1.1 |
+| **Effective date** | 2026-11-04 |
 | **Applies to** | Optional Android Online play in Tres – Pusoy Dos (`dev.tres.app`) |
+
+Version 1.1 adds the Series sentence in section 3. If you accepted version
+1.0, it keeps applying to your Online play until you start or join a Series,
+which asks you to accept version 1.1.
 
 ## 1. Tres – Pusoy Dos Online Terms
 
@@ -65,8 +69,10 @@ Review. They can save or share material already received. An interrupted
 Game does not release a completed Result or replay. Play only with that
 visibility in mind: other people's downloaded copies cannot be recalled.
 
-Online Games do not grant Cosmetic Tokens, Milestones or Your Record
-progress. There are no ads in Online Rooms, including between Games.
+Online Games do not grant Cosmetic Tokens or Milestones. A completed Online
+Series counts once in Your Record's three Series counters on your device;
+Online Games count toward nothing else there. There are no ads in Online
+Rooms, including between Games.
 Local progress, the Shop and local/cloud progress backups remain separate.
 
 ## 4. Respect other players and the service
