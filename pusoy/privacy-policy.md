@@ -2,15 +2,31 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.3 |
-| **Effective date** | 2026-11-03 |
+| **Version** | 2.4 |
+| **Effective date** | 2026-11-04 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when using Android Online; Online is not available on iOS in this release. |
 
-Version 2.3 adds one Online detail. During an Online game you can tap a quick
-expression: one of a fixed set of emoji and short phrases written by us. You
-cannot type your own. Our service passes it to the other players in your room
-as you send it and does not keep it; its logs may note that one was sent and
-whether it was passed on, never which one. Nothing else changes.
+Version 2.4 adds one Online detail and one for the Daily Deal and the Tour.
+First, if the Organizer of your room starts a Series, our service keeps the
+Series' settings, which seats belong to which players, and, for each completed
+Game in that room, each seat's points and whether AI played for that seat, so
+everyone in the room sees the same standings. It is kept only while the room
+exists and at most 7 days after the room ends, and it is deleted within 24
+hours if a player in the Series deletes their Online profile. Your device
+keeps the latest standings it received with its saved Online Result, and a
+completed Series counts in Your Record on your device. Second, your Daily Deal
+and Tour progress — which Daily Deals you played and how you did against par,
+your games from the last 30 Daily Deals, and which Tour stops you have
+cleared — is kept on your device, and the optional Google Play Games and Game
+Center backups also hold the parts of that progress that pay tokens or unlock
+a reward. A Daily Deal result you share is text you send yourself. Nothing
+else changes.
+
+Version 2.3 (2026-11-03) adds one Online detail. During an Online game you can
+tap a quick expression: one of a fixed set of emoji and short phrases written
+by us. You cannot type your own. Our service passes it to the other players in
+your room as you send it and does not keep it; its logs may note that one was
+sent and whether it was passed on, never which one. Nothing else changes.
 
 Version 2.2 (2026-11-03) adds one Online detail. Online now keeps, on your
 device only, a short list of players you recently shared a room with — each
@@ -165,7 +181,11 @@ own Google account:**
 - **A backup of your progress** — your milestones, your Cosmetic Token
   balance, the packs you bought with tokens, and your record of games
   played — saved to your Google account so you can restore it on another
-  phone. So that nothing is paid or counted twice, it also holds the
+  phone. It also holds which Daily Deals you finished and whether you
+  made or beat par, the Tour stops you cleared and whether you earned the
+  Champion's Finish — the parts of that progress that pay tokens or
+  unlock a reward. The detail of each Daily Deal is not in this backup.
+  So that nothing is paid or counted twice, it also holds the
   game's own notes of the token rewards it has already paid you, and
   Google Play's reference for each Token bundle you bought that has
   already been added to your balance. It holds no payment details.
@@ -223,7 +243,11 @@ own Apple Account:**
   balance, the packs you bought with tokens, and your record of games
   played — saved as one Game Center saved game in your iCloud, so you
   can restore it on another iPhone or iPad signed in to Game Center with
-  the same Apple Account. So that nothing is paid or counted twice, it
+  the same Apple Account. It also holds which Daily Deals you finished
+  and whether you made or beat par, the Tour stops you cleared and
+  whether you earned the Champion's Finish — the parts of that progress
+  that pay tokens or unlock a reward. The detail of each Daily Deal is
+  not in this backup. So that nothing is paid or counted twice, it
   also holds the game's own notes of the token rewards it has already
   paid you, and the App Store's reference for each Token bundle you
   bought that has already been added to your balance. It holds no
@@ -278,6 +302,14 @@ delete what is already saved to your Apple Account;
 - **Cosmetic progress** — your Cosmetic Token balance, owned packs,
   milestone record, and the purchase tokens already credited are kept
   locally so a purchase cannot be granted twice.
+- **Daily Deal and Tour progress** — which Daily Deals you played, how
+  you finished each and how you did against par, and which Tour stops
+  you have cleared, with any Daily Deal or Tour game you are in the
+  middle of, and your games from the last 30 Daily Deals, so you can
+  review them. It is kept on your device. The Daily Deal result you can
+  share is text you send yourself through your device's share sheet: the
+  deal's number and date, your placement, par and a row of symbols for
+  your tricks — no name, no identifier and no link.
 
 The local-play files listed above are not uploaded to North Pixel Labs,
 and we have no server copy. Android Online keeps separate private credentials
@@ -316,7 +348,10 @@ storage excluded from cloud and device-transfer backups.
 
 Room settings, membership, invitations, join requests, game state, moves,
 reconnection state and completed Results let us operate and recover private
-Games. Quick expressions you tap during a Game — a fixed set of emoji and
+Games. If the Organizer starts a Series, the room's Series settings, its
+players' seats, and each completed Game's points and AI-assisted marks let
+everyone in the room see the same standings.
+Quick expressions you tap during a Game — a fixed set of emoji and
 short phrases written by us, never text you type — are passed by our service
 to the other players in that room as you send them. The service does not store
 them: it holds the time of your last one for about a second, to space them
@@ -339,8 +374,10 @@ security and backup exceptions still apply.
 **Who can see what.** A join request shares your name and Player Code with the
 Organizer; you see their name/code and advertised settings. An invitation
 recipient sees the Organizer and settings before accepting. Only admitted
-members see the room roster and receive its game information. The other
-players in your room see the quick expressions you send, next to your seat.
+members see the room roster and receive its game information. Everyone in a
+room sees its Series standings, with each seat named as the room shows it.
+The other players in your room see the quick expressions you send, next to
+your seat.
 Each player can mute anyone's on their own device; muting tells no one. Each
 player gets their own private hand while a Game is live. At a natural end,
 original participants can download the deal and action history for Result and
@@ -406,9 +443,10 @@ not a promise that every record remains available for the entire period.
 | Invitations, join requests and cooldowns | Pending invitations 10 minutes; requests 2 minutes; terminal records/cooldowns at most 24 hours. |
 | Blocks and room removal records | Blocks until profile expiry/deletion; removed-player records until that room closes. |
 | Room membership, private Game state and command outcomes | Live room and at most 7 days after termination; command outcomes 7 days. Retained Games involving a deleted profile are removed within 24 hours. |
+| Series standings | The Series' settings, its players' seats, and each completed Game's points and AI-assisted marks: live room and at most 7 days after the room ends; replaced when the room starts another Series; removed within 24 hours if a player in the Series deletes their profile. Players who saw the standings may keep their copy on their device. |
 | Quick expressions | Not stored: passed to the other players in the room as they are sent. The time of your last one is held in memory for about a second, to space them out. Logs may note that one was sent and whether it was passed on, never which one, for the 7 days logs are kept. |
 | Completed replay and Result on the server | Original participants only, at most 7 days; deleted participants lose access. Copies already downloaded cannot be recalled. |
-| Private credential and caches on this installation | Credential until deletion, key loss or expiry. Cached profile/current-room pointer at most 30 days; one Result at most 30 days or replacement; hand layout until at most 24 hours after termination. Recent players: the display names and Player Codes of at most 6 players you shared a room with, each dropped 30 days after it was last added; the list itself is never sent to our service (tapping Invite beside a player sends their Player Code, as typing it would), and you can remove any player from it. Until the app reaches our service after it starts (for example, when it is opened offline), these ages are measured by this device's clock, so a clock set back can make a cache look younger than it is. Caches never prove access and are cleared on deletion or definitive identity loss. |
+| Private credential and caches on this installation | Credential until deletion, key loss or expiry. Cached profile/current-room pointer at most 30 days; one Result, with the latest Series standings received for it, at most 30 days or replacement; the Series this device has counted in Your Record, at most 8, each kept 30 days; hand layout until at most 24 hours after termination. Recent players: the display names and Player Codes of at most 6 players you shared a room with, each dropped 30 days after it was last added; the list itself is never sent to our service (tapping Invite beside a player sends their Player Code, as typing it would), and you can remove any player from it. Until the app reaches our service after it starts (for example, when it is opened offline), these ages are measured by this device's clock, so a clock set back can make a cache look younger than it is. Caches never prove access and are cleared on deletion or definitive identity loss. |
 | Reports | 90 days; profile links removed within 24 hours of deletion, with deletion-specific pseudonyms retained only to the original report expiry. |
 | Security audit | 30 days, limited to reason/time/opaque ID; profile link removed within 24 hours of deletion. |
 | Logs and operational counters | Logs 7 days, without account, room or request identifiers. A log line may carry a random session tag that the app creates for each app session and replaces at least daily and whenever your Online profile changes; it lets the operator follow one app session's steps, for up to the 7 days logs are kept, when diagnosing a problem. It is never stored with your profile. IP rate buckets in memory at most 1 hour; account/global quota counters at most 24 hours; fixed-label aggregate counters 90 days. |
