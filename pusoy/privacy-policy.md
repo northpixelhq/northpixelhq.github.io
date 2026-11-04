@@ -2,25 +2,39 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.4 |
+| **Version** | 2.5 |
 | **Effective date** | 2026-11-04 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when using Android Online; Online is not available on iOS in this release. |
 
-Version 2.4 adds one Online detail and one for the Daily Deal and the Tour.
-First, if the Organizer of your room starts a Series, our service keeps the
-Series' settings, which seats belong to which players, and, for each completed
-Game in that room, each seat's points and whether AI played for that seat, so
-everyone in the room sees the same standings. It is kept only while the room
-exists and at most 7 days after the room ends, and it is deleted within 24
-hours if a player in the Series deletes their Online profile. Your device
-keeps the latest standings it received with its saved Online Result, and a
-completed Series counts in Your Record on your device. Second, your Daily Deal
-and Tour progress — which Daily Deals you played and how you did against par,
-your games from the last 30 Daily Deals, and which Tour stops you have
-cleared — is kept on your device, and the optional Google Play Games and Game
-Center backups also hold the parts of that progress that pay tokens or unlock
-a reward. A Daily Deal result you share is text you send yourself. Nothing
+Version 2.5 names what the game keeps about the Tour's prize. Winning the
+Tour's Final Table earns the Champion's Deck: a card deck, a design for the
+cards themselves, that you can wear in any pack. Your device keeps whether
+you earned it, which version 2.4 called whether you earned the Champion's
+Finish; a count of the Tour games you play on your way to winning, which
+the game shows as "Won in N Games"; and, after you win, the date you first
+won the Final Table, your opening hand in the game that decided it, and
+whether the Champion's Deck's one-time reveal is still to be shown. The
+optional Google Play Games and Game Center backups hold these too. Which
+card deck you wear, and a Tour Series you are partway through, are kept on
+your device and are not in those backups. The game itself sends nothing
+about a card deck to our service or to another player's phone. Nothing
 else changes.
+
+Version 2.4 (2026-11-04) adds one Online detail and one for the Daily Deal
+and the Tour. First, if the Organizer of your room starts a Series, our
+service keeps the Series' settings, which seats belong to which players,
+and, for each completed Game in that room, each seat's points and whether
+AI played for that seat, so everyone in the room sees the same standings.
+It is kept only while the room exists and at most 7 days after the room
+ends, and it is deleted within 24 hours if a player in the Series deletes
+their Online profile. Your device keeps the latest standings it received
+with its saved Online Result, and a completed Series counts in Your Record
+on your device. Second, your Daily Deal and Tour progress — which Daily
+Deals you played and how you did against par, your games from the last 30
+Daily Deals, and which Tour stops you have cleared — is kept on your
+device, and the optional Google Play Games and Game Center backups also
+hold the parts of that progress that pay tokens or unlock a reward. A Daily
+Deal result you share is text you send yourself. Nothing else changes.
 
 Version 2.3 (2026-11-03) adds one Online detail. During an Online game you can
 tap a quick expression: one of a fixed set of emoji and short phrases written
@@ -183,8 +197,13 @@ own Google account:**
   played — saved to your Google account so you can restore it on another
   phone. It also holds which Daily Deals you finished and whether you
   made or beat par, the Tour stops you cleared and whether you earned the
-  Champion's Finish — the parts of that progress that pay tokens or
-  unlock a reward. The detail of each Daily Deal is not in this backup.
+  Champion's Deck — the parts of that progress that pay tokens or
+  unlock a reward. Beside them it holds a count of the Tour games you
+  play on your way to winning the Tour, which the game shows as "Won in
+  N Games", and, after you win, the date you first won the Final Table,
+  your opening hand in the game that decided it (the thirteen cards you
+  were dealt) and whether the Champion's Deck's one-time reveal is still
+  to be shown. The detail of each Daily Deal is not in this backup.
   So that nothing is paid or counted twice, it also holds the
   game's own notes of the token rewards it has already paid you, and
   Google Play's reference for each Token bundle you bought that has
@@ -206,10 +225,11 @@ own Google account:**
   Separately choosing **Protect with Play Games** or **Restore online
   profile** sends a verification code to our service and lets it verify
   your Play Games player ID for recovery, as the Online section explains.
-- Your saved game in progress, your settings and your chosen theme are
-  **not** in the backup, and neither are the packs you bought with
-  money: **Restore purchases** in the Shop brings those back by asking
-  Google Play, not the backup.
+- Your saved game in progress, the Tour's notes on your phone (such as
+  a Series you are partway through), your settings, your chosen theme
+  and the card deck you wear are **not** in the backup, and neither are
+  the packs you bought with money: **Restore purchases** in the Shop
+  brings those back by asking Google Play, not the backup.
 
 **If you change your mind**, sign out in the Google Play Games app. The
 game goes on working exactly as it did before you signed in. Signing out
@@ -245,8 +265,13 @@ own Apple Account:**
   can restore it on another iPhone or iPad signed in to Game Center with
   the same Apple Account. It also holds which Daily Deals you finished
   and whether you made or beat par, the Tour stops you cleared and
-  whether you earned the Champion's Finish — the parts of that progress
-  that pay tokens or unlock a reward. The detail of each Daily Deal is
+  whether you earned the Champion's Deck — the parts of that progress
+  that pay tokens or unlock a reward. Beside them it holds a count of
+  the Tour games you play on your way to winning the Tour, which the
+  game shows as "Won in N Games", and, after you win, the date you first
+  won the Final Table, your opening hand in the game that decided it
+  (the thirteen cards you were dealt) and whether the Champion's Deck's
+  one-time reveal is still to be shown. The detail of each Daily Deal is
   not in this backup. So that nothing is paid or counted twice, it
   also holds the game's own notes of the token rewards it has already
   paid you, and the App Store's reference for each Token bundle you
@@ -266,10 +291,11 @@ own Apple Account:**
 - Your Game Center name is shown on that one screen while you are
   signed in, and nothing more. Neither it nor your Game Center player id
   is written to your device or sent anywhere by us.
-- Your saved game in progress, your settings and your chosen theme are
-  **not** in the backup, and neither are the packs you bought with
-  money: **Restore purchases** in the Shop brings those back by asking
-  the App Store, not the backup.
+- Your saved game in progress, the Tour's notes on your device (such as
+  a Series you are partway through), your settings, your chosen theme
+  and the card deck you wear are **not** in the backup, and neither are
+  the packs you bought with money: **Restore purchases** in the Shop
+  brings those back by asking the App Store, not the backup.
 - A Game Center backup and a Google Play Games backup are separate. The
   game on one platform never reads the other's, so moving between
   Android and an iPhone or iPad carries neither.
@@ -303,13 +329,22 @@ delete what is already saved to your Apple Account;
   milestone record, and the purchase tokens already credited are kept
   locally so a purchase cannot be granted twice.
 - **Daily Deal and Tour progress** — which Daily Deals you played, how
-  you finished each and how you did against par, and which Tour stops
-  you have cleared, with any Daily Deal or Tour game you are in the
-  middle of, and your games from the last 30 Daily Deals, so you can
-  review them. It is kept on your device. The Daily Deal result you can
-  share is text you send yourself through your device's share sheet: the
-  deal's number and date, your placement, par and a row of symbols for
-  your tricks — no name, no identifier and no link.
+  you finished each and how you did against par, which Tour stops you
+  have cleared and the Champion's Deck details listed above, with any
+  Daily Deal or Tour game you are in the middle of, and your games from
+  the last 30 Daily Deals, so you can review them. It is kept on your
+  device. The Daily Deal result you can share is text you send yourself
+  through your device's share sheet: the deal's number and date, your
+  placement, par and a row of symbols for your tricks — no name, no
+  identifier and no link.
+- **Your card deck** — which card deck you wear: the Standard Deck (each
+  pack's own cards) or, once you have earned it, the Champion's Deck. It
+  is kept on your device, with your chosen theme. A card deck's design
+  is part of the app itself, not your data. The game itself sends
+  nothing about a card deck to our service or to another player's
+  phone. Your device's own backup, on Android or on iOS, may copy your
+  choice with the app's other private files, as the paragraphs below
+  describe.
 
 The local-play files listed above are not uploaded to North Pixel Labs,
 and we have no server copy. Android Online keeps separate private credentials
