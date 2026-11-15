@@ -1,6 +1,6 @@
 # Delete your Online profile — Tres – Pusoy Dos
 
-Effective 2026-10-26.
+Effective 2026-11-15.
 
 ## Request deletion or help without the app
 
@@ -18,7 +18,7 @@ Preparation alone does not delete anything. An accepted request revokes access,
 removes the recovery link, ends live Games, and schedules live profile and
 associated Game-data purge within 24 hours. We retain only the bounded report,
 audit, replay-journal and backup exceptions in the
-[Privacy Policy retention schedule](https://northpixelhq.github.io/pusoy/privacy-policy#online-on-android--optional-private-rooms)
+[Privacy Policy retention schedule](https://northpixelhq.github.io/pusoy/privacy-policy#online--optional-private-rooms)
 for moderation, security
 and reliable erasure after restoration, not to continue the profile.
 
@@ -31,9 +31,12 @@ Deletion leaves local saves, purchases, Google/Apple accounts and separate
 progress backups alone. Contact their providers for data they hold separately.
 
 If the installation credential is lost, a previously protected profile can
-be restored and then deleted before its expiry. An unprotected lost profile
-cannot be claimed or deleted by presenting its public code, display name or
-an email; inactivity expiry still applies. You may request deletion or raise
+be restored on Android and then deleted before its expiry. An unprotected
+lost profile, which includes any lost iPhone or iPad profile, cannot be
+claimed or deleted by presenting its public code, display name or an email;
+inactivity expiry still applies. On iPhone and iPad, delete your Online
+profile in the app before you delete the app or change devices if you want
+it removed sooner. You may request deletion or raise
 another privacy concern at **northpixellabs@gmail.com** without the app. We
 will explain what can be verified and the available route. Do not email
 private access credentials or deletion receipts. Uninstalling or merely
@@ -51,7 +54,7 @@ objection or withdrawal of consent, erasure or blocking, and portability
 where applicable. We need to establish that a request concerns your data
 before disclosing or changing a profile. Do not email private credentials,
 Google passwords, deletion receipts or unnecessary identity documents.
-The [Privacy Policy’s Online section](https://northpixelhq.github.io/pusoy/privacy-policy#online-on-android--optional-private-rooms)
+The [Privacy Policy’s Online section](https://northpixelhq.github.io/pusoy/privacy-policy#online--optional-private-rooms)
 explains the limits where a private credential is lost.
 You may also raise a concern with the Philippine
 [National Privacy Commission](https://privacy.gov.ph/data-subject-rights/).
