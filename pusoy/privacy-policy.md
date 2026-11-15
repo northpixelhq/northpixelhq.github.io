@@ -2,11 +2,23 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.5 |
-| **Effective date** | 2026-11-04 |
-| **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when using Android Online; Online is not available on iOS in this release. |
+| **Version** | 2.6 |
+| **Effective date** | 2026-11-15 |
+| **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when you use Online, on Android or on iOS. |
 
-Version 2.5 names what the game keeps about the Tour's prize. Winning the
+Version 2.6 brings optional Online play to iPhone and iPad. Players on
+Android and on iPhone and iPad play in the same private rooms, and our
+service keeps the same kinds of information about every player, for the
+same times; only Play Games protection, which Android alone has, differs.
+On iPhone and iPad your Online profile stays on that device and cannot be
+restored on another, and deleting the app starts a new profile. The app
+seals the profile's private credential with a key that does not move to
+another device, and keeps it, with its Online caches, in a folder it marks
+to be left out of iCloud Backup and computer backups. Deleting the app does
+not delete your profile from our service: delete it in the app first, or it
+expires after 90 days without use. Nothing else changes.
+
+Version 2.5 (2026-11-04) names what the game keeps about the Tour's prize. Winning the
 Tour's Final Table earns the Champion's Deck: a card deck, a design for the
 cards themselves, that you can wear in any pack. Your device keeps whether
 you earned it, which version 2.4 called whether you earned the Champion's
@@ -143,8 +155,8 @@ and their history are recorded in the policy's repository.*
 
 **The short version:** local play runs on your device. Nearby play sends
 room information to the other phones on your local network. Optional Online
-play on Android uses our server and a private guest profile; Google sign-in
-is not required. Online has its own data, recovery and deletion rules below.
+play, on Android and on iPhone and iPad, uses our server and a private guest
+profile; no sign-in is required. Online has its own data, recovery and deletion rules below.
 There are no North Pixel Labs gameplay analytics or advertising uses of
 Online profile data. Google serves ads outside Online Rooms. Google Play on
 Android and the App Store on iPhone and iPad handle Shop payments; we do not
@@ -167,9 +179,10 @@ Local and Nearby play need no North Pixel Labs account or sign-up. The app
 does not ask for your email address, phone number, contacts, photos or
 location to play. The display name in Settings is used for same-room play:
 it stays on your device and travels only to the phones in that room over
-your local network. Android Online separately asks for a display name and
-creates a server profile after your agreement. Its name, codes and other
-data are explained under **Online on Android — optional private rooms**.
+your local network. Online separately asks for a display name and creates a
+server profile after your agreement, on Android and on iPhone and iPad. Its
+name, codes and other data are explained under **Online — optional private
+rooms**.
 Home and Nearby do not contact the Online service.
 
 ### Google Play Games — optional, and yours to turn off
@@ -287,7 +300,8 @@ own Apple Account:**
 
 - These milestones and the progress backup go to Apple, not to North Pixel
   Labs; we cannot read your iCloud backup. Game Center does not create or
-  protect a Tres Online profile. Online is unavailable on iOS in this release.
+  protect a Tres Online profile, and Online does not upload its credential
+  or live Games into this backup.
 - Your Game Center name is shown on that one screen while you are
   signed in, and nothing more. Neither it nor your Game Center player id
   is written to your device or sent anywhere by us.
@@ -347,8 +361,9 @@ delete what is already saved to your Apple Account;
   describe.
 
 The local-play files listed above are not uploaded to North Pixel Labs,
-and we have no server copy. Android Online keeps separate private credentials
-and caches, with the different backup and retention rules below. Android may automatically copy eligible app-private files into the
+and we have no server copy. Online keeps separate private credentials and
+caches, on Android and on iPhone and iPad, with the different backup and
+retention rules below. Android may automatically copy eligible app-private files into the
 private backup associated with your Google account, depending on your
 device and backup settings. Google protects that backup with your Google
 account credentials; North Pixel Labs cannot read it. Reinstalling may
@@ -361,25 +376,29 @@ storage, which iOS includes in your device's own backups — iCloud
 Backup, if you have it turned on, or a backup you make on a computer.
 Apple protects an iCloud Backup with your Apple Account; North Pixel
 Labs cannot read it. The Game Center backup described above is the one
-copy the app itself writes to the cloud, and only while you are signed
-in. The App Store separately keeps its own Shop purchase records, as
-described below.
+copy of these files the app itself writes to the cloud, and only while you
+are signed in. Online's private credential and caches are kept apart from
+these files, in a folder the app marks to be left out of those backups, as
+the Online section explains. The App Store separately keeps its own Shop
+purchase records, as described below.
 
-## Online on Android — optional private rooms
+## Online — optional private rooms
 
 Online is optional. Choosing Online contacts our service to check availability.
 A profile is created only after you enter a display name, agree to the Online
 Terms/privacy disclosure and the app securely saves a private credential.
-You can decline and continue with local or Nearby play. Google sign-in is not
-required. Online is unavailable on iPhone and iPad in this release.
+You can decline and continue with local or Nearby play. No Google or Apple
+sign-in is required. Online works the same way on Android and on iPhone and
+iPad, and players on either share the same rooms; where this section differs
+between them, it names the device.
 
 **What we process and why.** We keep a Tres account ID, Player Code, filtered
 display name and accepted Terms version; security checks derived from your
 private credential; and the app/platform/protocol/rules versions needed for
 compatibility and authenticated access. The private credential is sent over
 encrypted transport for verification; the server keeps a keyed hash rather
-than the raw credential. The app stores its credential in encrypted private
-storage excluded from cloud and device-transfer backups.
+than the raw credential. On Android, the app stores its credential in
+encrypted private storage excluded from cloud and device-transfer backups.
 
 Room settings, membership, invitations, join requests, game state, moves,
 reconnection state and completed Results let us operate and recover private
@@ -406,6 +425,22 @@ in protecting players and the service, subject to your rights. You may stop
 using Online, remove the recovery link or request deletion; the bounded
 security and backup exceptions still apply.
 
+**On iPhone and iPad.** The app seals its private credential with a key held
+in the device's Keychain for that device only: iCloud Keychain does not sync
+it, and it does not move to another device. The sealed credential and the
+Online caches are kept in one folder the app marks to be left out of iCloud
+Backup and computer backups. Deleting the app deletes that folder, and
+installing the app again starts a new Online profile. The random key Online
+keeps in the device's Keychain can outlast the app: it holds no profile,
+opens nothing once the folder is gone, and is deleted the next time Online
+is set up on that device. A new iPhone or iPad,
+or a backup from another device, cannot open an old profile. Apple describes
+that mark as guidance for backups rather than a guarantee: if a backup
+restored to the same iPhone or iPad ever brought the folder back, the old
+profile could return on that device, and never on another. There is no Play
+Games protection on iPhone and iPad, and Game Center is not used for Online,
+so nothing can restore an iPhone or iPad profile on another device.
+
 **Who can see what.** A join request shares your name and Player Code with the
 Organizer; you see their name/code and advertised settings. An invitation
 recipient sees the Organizer and settings before accepting. Only admitted
@@ -426,7 +461,7 @@ review reports and apply moderation, with restricted, audited access; support
 and moderation do not grant arbitrary access to private Games. A fresh guest
 installation can have another code, so blocks are not verified-person bans.
 
-**Optional Play Games protection.** Only an explicit Protect or Restore
+**Optional Play Games protection (Android only).** Only an explicit Protect or Restore
 operation sends a single-use Google authorization code to our backend. It
 exchanges that code with Google and verifies which player ID belongs to this
 game. We keep a keyed hash of that game-specific identity as the recovery
@@ -451,7 +486,7 @@ and independent security/deletion journal use DigitalOcean's Singapore region
 operates the service from the Philippines. Thus Online data is processed
 outside your device and may cross national borders. DigitalOcean supplies
 hosting/storage on our behalf; Google separately verifies optional recovery
-and provides the services described elsewhere in this policy. Their applicable
+on Android and provides the services described elsewhere in this policy. Their applicable
 terms and processing arrangements also govern their services; selecting a
 Singapore region is not a promise that all provider operations worldwide
 occur only there.
@@ -472,7 +507,7 @@ not a promise that every record remains available for the entire period.
 
 | Information | Retention and purpose |
 |---|---|
-| Profile, name, Player Code, Terms and private-root hash | Unprotected profile/root: 90 days without successful credential renewal. Protected profile: 365 days since successful renewal, Protect or Restore; the root still has a 90-day limit. Profile expiry starts live purge within 24 hours. |
+| Profile, name, Player Code, Terms and private-root hash | Unprotected profile/root, which includes every iPhone and iPad profile: 90 days without successful credential renewal. Protected profile (Android only): 365 days since successful renewal, Protect or Restore; the root still has a 90-day limit. Profile expiry starts live purge within 24 hours. |
 | Session credential hashes and creation retry records | Sessions at most 24 hours, never beyond root expiry; revoked session hashes at most 24 hours. Creation retry binding stays while the profile exists. |
 | Optional recovery link and operations | Link until unlink/profile expiry/deletion. An operation lasts 10 minutes and verified proof at most 5 minutes within it; outcome status 7 days; used verification-code hashes 10 minutes. Replaced-root hashes last 35 days to prevent rollback. |
 | Invitations, join requests and cooldowns | Pending invitations 10 minutes; requests 2 minutes; terminal records/cooldowns at most 24 hours. |
@@ -512,9 +547,12 @@ Deletion leaves local saves, purchases, Google/Apple accounts and separate
 progress backups alone. Contact their providers for data they hold separately.
 
 If the installation credential is lost, a previously protected profile can
-be restored and then deleted before its expiry. An unprotected lost profile
-cannot be claimed or deleted by presenting its public code, display name or
-an email; inactivity expiry still applies. You may request deletion or raise
+be restored on Android and then deleted before its expiry. An unprotected
+lost profile, which includes any lost iPhone or iPad profile, cannot be
+claimed or deleted by presenting its public code, display name or an email;
+inactivity expiry still applies. On iPhone and iPad, delete your Online
+profile in the app before you delete the app or change devices if you want
+it removed sooner. You may request deletion or raise
 another privacy concern at **northpixellabs@gmail.com** without the app. We
 will explain what can be verified and the available route. Do not email
 private access credentials or deletion receipts. Uninstalling or merely
@@ -586,7 +624,7 @@ other.
 The app contains no North Pixel Labs gameplay analytics. Local play does
 not send gameplay telemetry to us. Online sends the profile, requests and
 game actions needed to run the service; it keeps the bounded operational
-and security records described below. We can therefore see Online service
+and security records described above. We can therefore see Online service
 records and aggregate room/Game activity, but we do not build a marketing
 profile or use Online data for advertising. North Pixel Labs never sells
 player data. Google and Apple services are disclosed separately in this policy.
@@ -702,8 +740,8 @@ above.
 
 ## What we see as developers
 
-We receive no local-gameplay telemetry. The optional Android Online service
-processes Online activity and bounded operating records as described below. Google provides aggregate Play
+We receive no local-gameplay telemetry. The optional Online service
+processes Online activity and bounded operating records as described above. Google provides aggregate Play
 statistics (such as installs, stability rates, and store ratings) and
 aggregate AdMob reports (such as impressions and revenue). For Shop
 transactions, Google Play may also make product, order, and purchase
@@ -723,9 +761,12 @@ at children. Ad content is configured for that audience.
 
 ## Deleting your data
 
-**Android Online has a separate server profile.** Uninstalling, clearing
-app data, deleting a Google Play Games backup or signing out does not delete
-that profile. Use **Online profile → Delete online profile** and confirm,
+**Online has a separate server profile.** On Android, uninstalling,
+clearing app data, deleting a Google Play Games backup or signing out does
+not delete that profile. On iPhone and iPad, deleting the app, deleting a
+Game Center backup or signing out of Game Center does not delete it either;
+and because an iPhone or iPad profile cannot be restored, delete it in the
+app before you delete the app if you want it removed before it expires. Use **Online profile → Delete online profile** and confirm,
 or contact **northpixellabs@gmail.com** to request help or deletion from
 outside the app. The Online section explains proof of access, lost-device
 limits, live erasure, backup expiry and retained security records. Deleting
@@ -754,12 +795,16 @@ settings. Google's own steps are at
 Google carries out that deletion. North Pixel Labs cannot, because the
 backup is stored in your Google account and never reaches us.
 
-**On iPhone and iPad, deleting the app removes everything it keeps on
+**On iPhone and iPad, deleting the app removes the app's own storage on
 the device** — saves, settings, logs, Token balance, entitlement cache,
-and replay-protection records. Copies of those files can remain in your
-device's own backups (iCloud Backup, or a backup on a computer) until
-those backups are replaced or deleted; you manage them in your device's
-Settings or on that computer. Money-bought packs may reappear when you
+replay-protection records, and Online's sealed credential and caches. The
+random key Online keeps in the device's Keychain can outlast the app: it
+holds no profile, opens nothing once the folder is gone, and is deleted the
+next time Online is set up on that device. Copies of the game's files can
+remain in your device's own backups (iCloud Backup, or a backup on a
+computer) until those backups are replaced or deleted; Online's folder is
+marked to be left out of them, as the Online section explains. You manage
+those backups in your device's Settings or on that computer. Money-bought packs may reappear when you
 use Restore purchases, because the App Store keeps those purchases for
 your Apple Account. North Pixel Labs cannot access or delete your
 device backups.
