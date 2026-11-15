@@ -2,32 +2,40 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.1 |
-| **Effective date** | 2026-11-04 |
-| **Applies to** | Optional Android Online play in Tres – Pusoy Dos (`dev.tres.app`) |
+| **Version** | 1.2 |
+| **Effective date** | 2026-11-15 |
+| **Applies to** | Optional Online play in Tres – Pusoy Dos (`dev.tres.app`) on Android and on iOS (iPhone and iPad) |
 
-Version 1.1 adds the Series sentence in section 3. If you accepted version
-1.0, it keeps applying to your Online play until you start or join a Series,
-which asks you to accept version 1.1.
+Version 1.2 brings Online to iPhone and iPad, in the same rooms as Android,
+and says in section 5 that Play Games protection is Android's alone: on
+iPhone and iPad a profile stays on that device and cannot be restored on
+another. If you accepted version 1.0, it keeps applying to your Online play
+until you start or join a Series, which asks you to accept version 1.2. If
+you accepted version 1.1, Online asks you to accept version 1.2 before you
+play again.
+
+Version 1.1 (2026-11-04) added the Series sentence in section 3.
 
 ## 1. Tres – Pusoy Dos Online Terms
 
-These Terms cover optional Online play in Tres – Pusoy Dos on Android.
+These Terms cover optional Online play in Tres – Pusoy Dos on Android and
+on iPhone and iPad.
 The service is operated by **Emmanuel Carlos Favis, trading as North Pixel
 Labs**. Contact: **northpixellabs@gmail.com**.
 
 Read these Terms and the [Privacy Policy](https://northpixelhq.github.io/pusoy/privacy-policy)
 before choosing **Agree and continue**. That choice accepts these Terms and
 the disclosed processing needed for Online play. You can go Back instead;
-local play, Nearby play, purchases and the separate Play Games progress
-features remain available. Online is not available on iPhone or iPad in this
-release. The game is intended for players aged 13 and older.
+local play, Nearby play, purchases and the separate Play Games and Game
+Center progress features remain available. Players on Android and on iPhone
+and iPad play in the same rooms. The game is intended for players aged 13
+and older.
 
 ## 2. Your profile, name and private codes
 
 Online creates a private Tres profile using a credential kept on this
-installation. You do not need an email address, password or Google sign-in
-to play as a guest. This credential identifies access to a profile, not a
+installation. You do not need an email address, password, or a Google or
+Apple sign-in to play as a guest. This credential identifies access to a profile, not a
 verified person. Keep your device secure; anyone who obtains its private
 credential may be able to act as that profile.
 
@@ -99,15 +107,21 @@ you believe an action was mistaken. Guest profiles are not verified people:
 a fresh installation can have another profile, so blocking cannot guarantee
 that the same person never returns under a different code.
 
-## 5. Optional Play Games protection and loss of access
+## 5. Optional Play Games protection (Android) and loss of access
 
-**Protect with Play Games** is optional. If you explicitly link a verified
+On Android, **Protect with Play Games** is optional. If you explicitly link a verified
 Play Games identity before losing this installation, **Restore online
 profile** can recover that same retained Tres profile and Player Code on
 another Android installation. It does not back up local progress or revive
 an ended or expired room. Google verification and your confirmation are
 required. Restore disconnects the previous installation's Online access;
 profiles are not silently merged.
+
+On iPhone and iPad there is no protection in this release, and Game Center
+is not used for Online. Your profile stays on that device and cannot be
+restored on another, and deleting Tres starts a new profile. Losing the app
+or the device loses the profile; it then expires as section 6 says, unless
+you deleted it in the app first.
 
 Clearing app data, uninstalling or losing the device's protected key can
 lose the private guest credential. An unprotected profile cannot be recovered
@@ -124,7 +138,7 @@ access can be managed separately; revoking it can affect those other features.
 ## 6. Retention and deletion
 
 An unprotected profile expires after 90 days without successful private
-credential renewal. A protected profile remains recoverable for 365 days
+credential renewal; every iPhone and iPad profile is unprotected. A protected profile remains recoverable for 365 days
 since its last successful renewal, protection or restoration; its current
 device credential still expires after 90 days without renewal. Protection and
 restoration renew that credential too. Removing protection starts a new
@@ -145,10 +159,13 @@ The app can keep a private status receipt. **Completed** means the live purge
 has finished, not that all backup media has already expired. The receipt
 cannot play or delete a profile and is lost on reinstall. Deletion cannot
 recall copies other players already downloaded. It does not delete local
-saves, purchases, your Google account or the separate progress backup.
+saves, purchases, your Google or Apple account or the separate progress
+backups.
 
-If you have lost access, a previously protected profile may be restored and
-then deleted while it is still retained. Without the private credential or
+If you have lost access, a previously protected profile may be restored on
+Android and then deleted while it is still retained. On iPhone and iPad,
+delete your profile in the app before you delete the app or change devices
+if you want it removed sooner. Without the private credential or
 prior protection, public codes and support email cannot authorize deletion
 of a claimed profile; inactivity expiry still applies. You may send a privacy
 or deletion request to **northpixellabs@gmail.com**, including if you cannot
