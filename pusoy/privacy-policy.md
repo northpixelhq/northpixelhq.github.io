@@ -2,11 +2,22 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.6 |
-| **Effective date** | 2026-11-15 |
+| **Version** | 2.7 |
+| **Effective date** | 2026-11-16 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when you use Online, on Android or on iOS. |
 
-Version 2.6 brings optional Online play to iPhone and iPad. Players on
+Version 2.7 adds card decks you can buy in the Shop. A card deck is a
+design for the cards themselves that you wear over any table, and the Shop
+now sells some, as it sells packs: through Google Play on Android or the
+App Store on iPhone and iPad, or for Cosmetic Tokens. A card deck you buy is
+kept, restored and backed up exactly as a pack you buy is: Restore purchases
+brings back one bought with money, and one bought with tokens is kept on
+your device and held in the optional Google Play Games and Game Center
+backups. Which card deck you wear stays on your device and out of those
+backups, as before. No new kind of information is collected or sent, and
+nothing else changes.
+
+Version 2.6 (2026-11-15) brings optional Online play to iPhone and iPad. Players on
 Android and on iPhone and iPad play in the same private rooms, and our
 service keeps the same kinds of information about every player, for the
 same times; only Play Games protection, which Android alone has, differs.
@@ -206,9 +217,9 @@ own Google account:**
 - **Your milestone unlocks and your progress towards them**, so they
   appear on your Play Games profile.
 - **A backup of your progress** — your milestones, your Cosmetic Token
-  balance, the packs you bought with tokens, and your record of games
-  played — saved to your Google account so you can restore it on another
-  phone. It also holds which Daily Deals you finished and whether you
+  balance, the packs and card decks you bought with tokens, and your record
+  of games played — saved to your Google account so you can restore it on
+  another phone. It also holds which Daily Deals you finished and whether you
   made or beat par, the Tour stops you cleared and whether you earned the
   Champion's Deck — the parts of that progress that pay tokens or
   unlock a reward. Beside them it holds a count of the Tour games you
@@ -225,8 +236,8 @@ own Google account:**
   backup, or replacing the backup with what is on a phone, only ever
   happens when you tap the button and confirm it. Restoring brings all
   of it back: the phone's milestones, Token balance and record become
-  the backup's, and the backup's packs bought with tokens join any the
-  phone already has.
+  the backup's, and the backup's packs and card decks bought with tokens
+  join any the phone already has.
 
 **What is not sent, and what we never see:**
 
@@ -241,8 +252,8 @@ own Google account:**
 - Your saved game in progress, the Tour's notes on your phone (such as
   a Series you are partway through), your settings, your chosen theme
   and the card deck you wear are **not** in the backup, and neither are
-  the packs you bought with money: **Restore purchases** in the Shop
-  brings those back by asking Google Play, not the backup.
+  the packs and card decks you bought with money: **Restore purchases** in
+  the Shop brings those back by asking Google Play, not the backup.
 
 **If you change your mind**, sign out in the Google Play Games app. The
 game goes on working exactly as it did before you signed in. Signing out
@@ -273,9 +284,9 @@ own Apple Account:**
 - **Your milestone unlocks and your progress towards them**, so they
   appear as achievements on your Game Center profile.
 - **A backup of your progress** — your milestones, your Cosmetic Token
-  balance, the packs you bought with tokens, and your record of games
-  played — saved as one Game Center saved game in your iCloud, so you
-  can restore it on another iPhone or iPad signed in to Game Center with
+  balance, the packs and card decks you bought with tokens, and your
+  record of games played — saved as one Game Center saved game in your
+  iCloud, so you can restore it on another iPhone or iPad signed in to Game Center with
   the same Apple Account. It also holds which Daily Deals you finished
   and whether you made or beat par, the Tour stops you cleared and
   whether you earned the Champion's Deck — the parts of that progress
@@ -293,8 +304,8 @@ own Apple Account:**
   device with that backup, or replacing the backup with what is on a
   device, only ever happens when you tap the button and confirm it.
   Restoring brings all of it back: the device's milestones, Token
-  balance and record become the backup's, and the backup's packs bought
-  with tokens join any the device already has.
+  balance and record become the backup's, and the backup's packs and card
+  decks bought with tokens join any the device already has.
 
 **What is not sent, and what we never see:**
 
@@ -308,8 +319,8 @@ own Apple Account:**
 - Your saved game in progress, the Tour's notes on your device (such as
   a Series you are partway through), your settings, your chosen theme
   and the card deck you wear are **not** in the backup, and neither are
-  the packs you bought with money: **Restore purchases** in the Shop
-  brings those back by asking the App Store, not the backup.
+  the packs and card decks you bought with money: **Restore purchases** in
+  the Shop brings those back by asking the App Store, not the backup.
 - A Game Center backup and a Google Play Games backup are separate. The
   game on one platform never reads the other's, so moving between
   Android and an iPhone or iPad carries neither.
@@ -339,8 +350,8 @@ delete what is already saved to your Apple Account;
   you typed — and nothing else. The app never sends it anywhere; your
   device's own backup, on Android or on iOS, may copy it with the app's
   other private files, as the paragraphs below describe.
-- **Cosmetic progress** — your Cosmetic Token balance, owned packs,
-  milestone record, and the purchase tokens already credited are kept
+- **Cosmetic progress** — your Cosmetic Token balance, owned packs and
+  card decks, milestone record, and the purchase tokens already credited are kept
   locally so a purchase cannot be granted twice.
 - **Daily Deal and Tour progress** — which Daily Deals you played, how
   you finished each and how you did against par, which Tour stops you
@@ -352,8 +363,8 @@ delete what is already saved to your Apple Account;
   placement, par and a row of symbols for your tricks — no name, no
   identifier and no link.
 - **Your card deck** — which card deck you wear: the Standard Deck (each
-  pack's own cards) or, once you have earned it, the Champion's Deck. It
-  is kept on your device, with your chosen theme. A card deck's design
+  pack's own cards), the Champion's Deck once you have earned it, or a
+  card deck you bought in the Shop. It is kept on your device, with your chosen theme. A card deck's design
   is part of the app itself, not your data. The game itself sends
   nothing about a card deck to our service or to another player's
   phone. Your device's own backup, on Android or on iOS, may copy your
@@ -560,8 +571,8 @@ stopping Online does not itself request deletion.
 
 ## Purchases — handled by Google Play
 
-On Android, the Shop offers cosmetic packs and Cosmetic Token bundles
-through **Google Play Billing**. Google Play displays the price and payment
+On Android, the Shop offers cosmetic packs, card decks and Cosmetic Token
+bundles through **Google Play Billing**. Google Play displays the price and payment
 screen and processes the transaction under
 [Google's Privacy Policy](https://policies.google.com/privacy). North
 Pixel Labs does **not** receive your card number, bank details, billing
@@ -574,24 +585,24 @@ consumption requests back to Google Play. There is no North Pixel Labs
 purchase server and no account linking this information to a gameplay
 profile.
 
-Money-bought cosmetic packs are durable purchases: **Restore purchases**
-asks Google Play which packs the signed-in Google account owns and
-restores those entitlements on a device. Cosmetic Token bundles are
+Money-bought cosmetic packs and card decks are durable purchases:
+**Restore purchases** asks Google Play which of them the signed-in Google
+account owns and restores those entitlements on a device. Cosmetic Token bundles are
 consumable, so Restore purchases cannot return the bundle or its resulting
 Token balance. Android Auto Backup may separately bring the app's private
 wallet back after a reinstall. Clearing the app's data does not trigger
 that backup restore and removes the local balance, along with any packs
-you bought with tokens, which Restore purchases cannot return, because they
-were bought with tokens and not from the store. North Pixel Labs cannot
+and card decks you bought with tokens, which Restore purchases cannot
+return, because they were bought with tokens and not from the store. North Pixel Labs cannot
 recover them, though the
 optional Google Play Games backup, if you use it, carries your Token
-balance and those packs, and the game offers to restore them, as
-described above.
+balance and those packs and card decks, and the game offers to restore
+them, as described above.
 
 ## Purchases on iPhone and iPad — handled by the App Store
 
-On iOS, the Shop offers the same cosmetic packs and Cosmetic Token
-bundles through **Apple's in-app purchase**. The App Store displays the
+On iOS, the Shop offers the same cosmetic packs, card decks and Cosmetic
+Token bundles through **Apple's in-app purchase**. The App Store displays the
 price and payment screen and processes the transaction under
 [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). North
 Pixel Labs does **not** receive your card number, bank details, billing
@@ -604,20 +615,20 @@ purchase cannot be granted twice, and tells the App Store when each
 transaction is finished. There is no North Pixel Labs purchase server
 and no account linking this information to a gameplay profile.
 
-Money-bought cosmetic packs are durable purchases: **Restore purchases**
-asks the App Store which packs your Apple Account owns and restores
-those entitlements on a device. Cosmetic Token bundles are consumable,
+Money-bought cosmetic packs and card decks are durable purchases:
+**Restore purchases** asks the App Store which of them your Apple Account
+owns and restores those entitlements on a device. Cosmetic Token bundles are consumable,
 so Restore purchases cannot return the bundle or its resulting Token
 balance. Deleting the app removes the local balance from the device,
-along with any packs you bought with tokens, which Restore purchases
-cannot return, because they were bought with tokens and not from the
-store. North Pixel Labs cannot recover them; the Game Center backup, if you use it, carries your Token
-balance and those packs, as described above.
+along with any packs and card decks you bought with tokens, which Restore
+purchases cannot return, because they were bought with tokens and not
+from the store. North Pixel Labs cannot recover them; the Game Center backup, if you use it, carries your Token
+balance and those packs and card decks, as described above.
 
-A purchase belongs to the store it was made in. Packs bought through
-Google Play are restored on Android, and packs bought through the App
-Store are restored on iPhone and iPad; neither store can answer for the
-other.
+A purchase belongs to the store it was made in. Packs and card decks
+bought through Google Play are restored on Android, and those bought
+through the App Store are restored on iPhone and iPad; neither store can
+answer for the other.
 
 ## What we deliberately don't do
 
@@ -691,10 +702,10 @@ Settings screen shows:**
   phones), then **Clear data** or **Clear storage**; the game asks again
   the next time it starts. Clearing the data also deletes everything
   else the game keeps on your phone, including your Token balance and
-  any packs you bought with tokens, which North Pixel Labs cannot
-  recover — though if you use the optional Google Play Games sign-in,
-  its backup holds both and the game offers to restore them on the
-  Mastery screen; see
+  any packs and card decks you bought with tokens, which North Pixel Labs
+  cannot recover — though if you use the optional Google Play Games
+  sign-in, its backup holds all of them and the game offers to restore
+  them on the Mastery screen; see
   [Deleting your data](#deleting-your-data).
   Uninstalling and reinstalling may not ask again, because Android's
   backup can bring back your earlier answer with the game's other files.
@@ -776,8 +787,9 @@ the Online profile leaves local saves, purchases and provider progress alone.
 current on-device saves, settings, logs, Token balance, entitlement
 cache, and replay-protection records.** After a reinstall, Android may restore an earlier
 app backup; clearing data alone does not trigger a restore. Money-bought
-packs may also reappear when you use Restore purchases because Google Play
-retains those purchases for the signed-in Google account. Manage Android
+packs and card decks may also reappear when you use Restore purchases
+because Google Play retains those purchases for the signed-in Google
+account. Manage Android
 backup, Play orders, and Google-held ads or purchase data through your
 device and Google account controls, including
 [myaccount.google.com](https://myaccount.google.com). North Pixel Labs
@@ -804,9 +816,9 @@ next time Online is set up on that device. Copies of the game's files can
 remain in your device's own backups (iCloud Backup, or a backup on a
 computer) until those backups are replaced or deleted; Online's folder is
 marked to be left out of them, as the Online section explains. You manage
-those backups in your device's Settings or on that computer. Money-bought packs may reappear when you
-use Restore purchases, because the App Store keeps those purchases for
-your Apple Account. North Pixel Labs cannot access or delete your
+those backups in your device's Settings or on that computer. Money-bought packs and card decks may
+reappear when you use Restore purchases, because the App Store keeps
+those purchases for your Apple Account. North Pixel Labs cannot access or delete your
 device backups.
 
 **Deleting the app does not delete your Game Center data.** If you
