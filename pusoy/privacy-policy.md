@@ -2,11 +2,13 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.7 |
-| **Effective date** | 2026-11-16 |
+| **Version** | 2.8 |
+| **Effective date** | 2026-11-18 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when you use Online, on Android or on iOS. |
 
-Version 2.7 adds card decks you can buy in the Shop. A card deck is a
+**Version 2.8 — Host (Online — optional private rooms)**
+
+Version 2.7 (2026-11-16) adds card decks you can buy in the Shop. A card deck is a
 design for the cards themselves that you wear over any table, and the Shop
 now sells some, as it sells packs: through Google Play on Android or the
 App Store on iPhone and iPad, or for Cosmetic Tokens. A card deck you buy is
@@ -44,7 +46,7 @@ about a card deck to our service or to another player's phone. Nothing
 else changes.
 
 Version 2.4 (2026-11-04) adds one Online detail and one for the Daily Deal
-and the Tour. First, if the Organizer of your room starts a Series, our
+and the Tour. First, if the Host of your room starts a Series, our
 service keeps the Series' settings, which seats belong to which players,
 and, for each completed Game in that room, each seat's points and whether
 AI played for that seat, so everyone in the room sees the same standings.
@@ -413,7 +415,7 @@ encrypted private storage excluded from cloud and device-transfer backups.
 
 Room settings, membership, invitations, join requests, game state, moves,
 reconnection state and completed Results let us operate and recover private
-Games. If the Organizer starts a Series, the room's Series settings, its
+Games. If the Host starts a Series, the room's Series settings, its
 players' seats, and each completed Game's points and AI-assisted marks let
 everyone in the room see the same standings.
 Quick expressions you tap during a Game — a fixed set of emoji and
@@ -453,8 +455,8 @@ Games protection on iPhone and iPad, and Game Center is not used for Online,
 so nothing can restore an iPhone or iPad profile on another device.
 
 **Who can see what.** A join request shares your name and Player Code with the
-Organizer; you see their name/code and advertised settings. An invitation
-recipient sees the Organizer and settings before accepting. Only admitted
+Host; you see their name/code and advertised settings. An invitation
+recipient sees the Host and settings before accepting. Only admitted
 members see the room roster and receive its game information. Everyone in a
 room sees its Series standings, with each seat named as the room shows it.
 The other players in your room see the quick expressions you send, next to
