@@ -2,17 +2,21 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 1.2 |
-| **Effective date** | 2026-11-15 |
+| **Version** | 1.3 |
+| **Effective date** | 2026-11-18 |
 | **Applies to** | Optional Online play in Tres – Pusoy Dos (`dev.tres.app`) on Android and on iOS (iPhone and iPad) |
 
-Version 1.2 brings Online to iPhone and iPad, in the same rooms as Android,
-and says in section 5 that Play Games protection is Android's alone: on
-iPhone and iPad a profile stays on that device and cannot be restored on
-another. If you accepted version 1.0, it keeps applying to your Online play
-until you start or join a Series, which asks you to accept version 1.2. If
-you accepted version 1.1, Online asks you to accept version 1.2 before you
-play again.
+**Version 1.3 — If the Host closes the room or a guest leaves (section 3)**
+
+**From version 1.2 (2026-11-15)**
+
+> Version 1.2 brings Online to iPhone and iPad, in the same rooms as Android,
+> and says in section 5 that Play Games protection is Android's alone: on
+> iPhone and iPad a profile stays on that device and cannot be restored on
+> another. If you accepted version 1.0, it keeps applying to your Online play
+> until you start or join a Series, which asks you to accept version 1.2. If
+> you accepted version 1.1, Online asks you to accept version 1.2 before you
+> play again.
 
 Version 1.1 (2026-11-04) added the Series sentence in section 3.
 
@@ -46,7 +50,7 @@ exploit children, advertise scams or share someone else's private information.
 Sexually explicit and otherwise unlawful content is prohibited. Names are
 filtered, and duplicate names are possible; a name does not prove identity.
 
-Your **Player Code** lets an Organizer address an invitation to you.
+Your **Player Code** lets a Host address an invitation to you.
 An **Online Room Code** lets you request to join a room. A code is shareable,
 not a password or recovery key. Share codes with the people you intend to
 play with, and check the displayed name and room settings before consenting.
@@ -54,20 +58,21 @@ Codes may eventually be reused after their reservation expires.
 
 ## 3. Joining and playing together
 
-A room-code request shows your name and Player Code to the Organizer and
+A room-code request shows your name and Player Code to the Host and
 needs their approval. An addressed invitation needs the recipient to accept.
 Neither merely having a code nor sending a request reserves a seat. There
 is no public room directory, matchmaking, contact upload or free-text/voice
 chat. Invitations appear when the recipient opens Online; they do not send
 push notifications.
 
-The Organizer controls the Lobby, entry and invitations and may remove a
+The Host controls the Lobby, entry and invitations and may remove a
 player from that room. A removed profile cannot rejoin that same room.
 The server decides valid game actions. AI seats are labelled. If you
 lose connection or go away, AI may take your seat during the room's stated
 disconnect policy. Returning to a still-valid seat does not undo actions
-already played. Leaving or closing a live room deliberately ends that Game;
-a temporary network departure is different. An outage or expired room may
+already played.
+If the Host closes the room, the Game ends. If a guest leaves, AI finishes the Game in their seat. Leaving ends an active Series.
+A temporary network departure is different. An outage or expired room may
 prevent return, even if a cached room card is still on your phone.
 
 While a Game is live, each player receives their own private hand and public
@@ -95,7 +100,7 @@ name, invitation abuse, conduct or another concern. Reports use fixed reasons,
 not a chat message or hidden-hand attachment. Reporting does not itself block
 a player. Use **Block** to stop further pairwise invitations and shared-room
 admission. Blocking someone in a shared Lobby removes the guest when you are
-the Organizer, or makes you leave when you are a guest. Blocking someone in
+the Host, or makes you leave when you are a guest. Blocking someone in
 a shared live Game interrupts that Game; read the confirmation first.
 Unblocking does not restore a seat or send an invitation.
 
