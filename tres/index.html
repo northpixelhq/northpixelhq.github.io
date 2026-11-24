@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Get Tres – Pusoy Dos</title>
+<meta name="description" content="Get Tres – Pusoy Dos, the Filipino card classic also known as Big Two: free on Google Play for Android and on the App Store for iPhone and iPad.">
+<meta name="theme-color" content="#0E2C1E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="North Pixel Labs">
+<meta property="og:title" content="Tres – Pusoy Dos">
+<meta property="og:description" content="Pusoy Dos solo, with friends on one Wi-Fi, or online in a private room. Free on Google Play and the App Store.">
+<meta property="og:image" content="https://northpixelhq.github.io/tres/share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Tres – Pusoy Dos icon, the three of clubs on green felt, above the words: The Filipino card classic, also known as Big Two.">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="../pusoy/tres-icon-512.png">
+<link rel="apple-touch-icon" href="tres-icon-256.png">
+<style>
+  :root {
+    --felt: #0E2C1E;
+    --felt-raised: #143826;
+    --ivory: #ECE0C8;
+    --ivory-soft: #CFC4AC;
+    --gold: #A9853B;
+    --gold-bright: #C9A45A;
+    --ink: #1B1406;
+    --line: rgba(236, 224, 200, 0.16);
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--felt);
+    color: var(--ivory);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 56px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header { order: 0; }
+  header img { width: 112px; height: 112px; border-radius: 24px; display: block; margin: 0 auto 24px; }
+  h1 {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 700;
+    font-size: clamp(34px, 7vw, 48px);
+    letter-spacing: 0.01em;
+    line-height: 1.15;
+  }
+  .by { margin: 8px 0 24px; color: var(--ivory-soft); font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .tagline { order: 2; margin: 0 auto 28px; max-width: 34em; font-size: 19px; }
+
+  /* The two store buttons: plain text, the site's gold. */
+  .stores {
+    order: 3;
+    display: grid;
+    gap: 18px;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 0 8px;
+  }
+  .store-cell { display: flex; flex-direction: column; align-items: stretch; gap: 6px; }
+  .store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 68px;
+    padding: 10px 22px 12px;
+    border: 2px solid var(--gold-bright);
+    border-radius: 16px;
+    background: var(--gold-bright);
+    color: var(--ink);
+    text-decoration: none;
+    line-height: 1.2;
+  }
+  .store-pre { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+  .store-name { font-size: 23px; font-weight: 700; letter-spacing: 0.01em; }
+  .store:hover { background: #D6B36B; border-color: #D6B36B; }
+  .store:focus-visible, a:focus-visible { outline: 3px solid var(--ivory); outline-offset: 3px; }
+  .store-for { color: var(--ivory-soft); font-size: 14px; }
+  @media (min-width: 560px) { .stores { grid-template-columns: 1fr 1fr; } }
+
+  .hint { order: 4; display: none; margin: 18px 0 0; color: var(--ivory-soft); font-size: 15px; }
+
+  /* What a phone sees for the moment before it is sent on. */
+  .status { order: 1; display: none; margin: 0 0 22px; color: var(--gold-bright); font-weight: 600; }
+  .status p { margin: 0; }
+  .bar { display: block; width: 160px; height: 3px; margin: 10px auto 0; border-radius: 3px; background: var(--line); overflow: hidden; }
+  .bar span { display: block; height: 100%; background: var(--gold-bright); transform-origin: left center; transform: scaleX(0); animation: fill 500ms linear forwards; }
+  @keyframes fill { to { transform: scaleX(1); } }
+  @media (prefers-reduced-motion: reduce) { .bar span { animation: none; transform: scaleX(1); } }
+
+  .is-other .hint { display: block; }
+  .is-android .status, .is-ios .status { display: block; }
+  .is-settled .bar { visibility: hidden; }
+  .is-android .tagline, .is-ios .tagline { order: 4; margin: 26px auto 0; font-size: 17px; color: var(--ivory-soft); }
+  .is-android .stores, .is-ios .stores { grid-template-columns: 1fr; max-width: 400px; }
+  .is-android #google-play-cell, .is-ios #app-store-cell { order: -1; }
+  .is-android #app-store-cell .store, .is-ios #google-play-cell .store { min-height: 56px; background: transparent; color: var(--gold-bright); }
+  .is-android #app-store-cell .store-name, .is-ios #google-play-cell .store-name { font-size: 19px; }
+
+  footer {
+    order: 5;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--ivory-soft);
+    font-size: 14px;
+  }
+  footer p { margin: 0 0 8px; }
+  a { color: var(--gold-bright); }
+</style>
+<script>
+/* Tres – Pusoy Dos download page.
+   An Android phone is sent to Google Play and an iPhone or iPad to the App
+   Store; anything else is shown both stores. Without JavaScript both store
+   buttons are shown and work. No cookie, no storage, nothing loaded from
+   anywhere else. */
+(function () {
+  'use strict';
+
+  var GOOGLE_PLAY = 'https://play.google.com/store/apps/details?id=dev.tres.app';
+  var APP_STORE = 'https://apps.apple.com/app/id6815482151';
+
+  // Apple's provider token ("pt") for App Store campaign links, from App
+  // Store Connect. Empty until the owner supplies it; while it is empty it
+  // is left out of every link.
+  var APPLE_PROVIDER_TOKEN = '';
+
+  // A phone sees this page for half a second before it is sent on: long
+  // enough to read the name and where it is going, never a wait.
+  var SEND_AFTER_MS = 500;
+  // After this the status line stops saying "taking you" and says "tap",
+  // which reads right whether or not the store opened.
+  var SETTLE_AFTER_MS = 2500;
+
+  // ?c=NAME: lower-case letters, digits and hyphens, at most 30 characters.
+  // Anything else is ignored as if absent.
+  var CAMPAIGN = /^[a-z0-9-]{1,30}$/;
+
+  function platformOf(ua, maxTouchPoints) {
+    if (/Windows Phone/i.test(ua)) return 'other';
+    if (/Android/i.test(ua)) return 'android';
+    if (/iPhone|iPad|iPod/.test(ua)) return 'ios';
+    // iPadOS asks for desktop sites by default and then calls itself a Mac.
+    // No Mac has a touch screen, so a "Mac" with multi-touch is an iPad.
+    if (/Macintosh/.test(ua) && maxTouchPoints > 1) return 'ios';
+    return 'other';
+  }
+
+  function campaignOf(search) {
+    var value = null;
+    try { value = new URLSearchParams(search).get('c'); } catch (e) { value = null; }
+    return value !== null && CAMPAIGN.test(value) ? value : '';
+  }
+
+  function googlePlayUrl(campaign) {
+    if (!campaign) return GOOGLE_PLAY;
+    return GOOGLE_PLAY + '&referrer=' + encodeURIComponent(
+      'utm_source=facebook&utm_medium=page&utm_campaign=' + campaign);
+  }
+
+  function appStoreUrl(campaign) {
+    if (!campaign) return APP_STORE;
+    var query = 'ct=' + encodeURIComponent(campaign) + '&mt=8';
+    if (APPLE_PROVIDER_TOKEN) query = 'pt=' + encodeURIComponent(APPLE_PROVIDER_TOKEN) + '&' + query;
+    return APP_STORE + '?' + query;
+  }
+
+  var platform = platformOf(navigator.userAgent || '', navigator.maxTouchPoints || 0);
+  var campaign = campaignOf(window.location.search);
+  var root = document.documentElement;
+  // A page this tab has already sent on (the store opened as an app and the
+  // visitor came back, or the page was reloaded) never sends again, so Back
+  // and Reload can't loop.
+  var alreadySent = !!(window.history.state && window.history.state.tresSent);
+  root.className += ' js is-' + platform + (alreadySent ? ' is-settled' : '');
+
+  var TEXT = {
+    android: ['Taking you to Google Play…', 'Tap the button to open Google Play.'],
+    ios: ['Taking you to the App Store…', 'Tap the button to open the App Store.']
+  };
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var play = document.getElementById('google-play');
+    var apple = document.getElementById('app-store');
+    play.href = googlePlayUrl(campaign);
+    apple.href = appStoreUrl(campaign);
+    if (platform === 'other') return;
+
+    var statusText = document.getElementById('status-text');
+    var settle = function () {
+      root.className += ' is-settled';
+      statusText.textContent = TEXT[platform][1];
+    };
+    if (alreadySent) { settle(); return; }
+
+    statusText.textContent = TEXT[platform][0];
+    document.getElementById('bar-fill').style.animationDuration = SEND_AFTER_MS + 'ms';
+    var target = platform === 'android' ? play.href : apple.href;
+    window.setTimeout(function () {
+      try { window.history.replaceState({ tresSent: true }, ''); } catch (e) { /* still send */ }
+      // replace(), not assign(): this page leaves the history, so Back from
+      // the store goes to wherever the visitor came from.
+      window.location.replace(target);
+    }, SEND_AFTER_MS);
+    window.setTimeout(settle, SETTLE_AFTER_MS);
+  });
+})();
+</script>
+</head>
+<body>
+<main>
+  <header>
+    <img src="tres-icon-256.png" width="112" height="112" alt="The Tres – Pusoy Dos app icon: the three of clubs on green felt">
+    <h1>Tres – Pusoy Dos</h1>
+    <p class="by">A card game by North Pixel Labs</p>
+  </header>
+
+  <div class="status" role="status" aria-live="polite">
+    <p id="status-text"></p>
+    <span class="bar" aria-hidden="true"><span id="bar-fill"></span></span>
+  </div>
+
+  <p class="tagline">Pusoy Dos — the Filipino card classic, also known as Big Two — played solo against three AI opponents, with friends on the same Wi-Fi, or online with friends in a private room. No sign-in needed.</p>
+
+  <div class="stores">
+    <div class="store-cell" id="google-play-cell">
+      <a class="store" id="google-play" href="https://play.google.com/store/apps/details?id=dev.tres.app">
+        <span class="store-pre">Get it on</span>
+        <span class="store-name">Google Play</span>
+      </a>
+      <span class="store-for">For Android</span>
+    </div>
+    <div class="store-cell" id="app-store-cell">
+      <a class="store" id="app-store" href="https://apps.apple.com/app/id6815482151">
+        <span class="store-pre">Download on the</span>
+        <span class="store-name">App Store</span>
+      </a>
+      <span class="store-for">For iPhone and iPad</span>
+    </div>
+  </div>
+
+  <p class="hint">On a phone, this page opens the right store for you.</p>
+
+  <footer>
+    <p>Tres – Pusoy Dos is made by North Pixel Labs. <a href="../">About the game</a> · <a href="https://northpixelhq.github.io/pusoy/privacy-policy">Privacy policy</a></p>
+    <p>Google Play and Android are trademarks of Google LLC. iPhone and iPad are trademarks of Apple Inc. App Store is a service mark of Apple Inc.</p>
+  </footer>
+</main>
+</body>
+</html>
