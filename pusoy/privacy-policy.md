@@ -2,11 +2,19 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.8 |
-| **Effective date** | 2026-11-18 |
+| **Version** | 2.9 |
+| **Effective date** | 2026-11-25 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when you use Online, on Android or on iOS. |
 
-**Version 2.8 — Host (Online — optional private rooms)**
+Version 2.9 corrects what this policy says about where ads appear. It
+said ads appear only between games. The game also shows one small banner
+at the top of its Home screen, and the rewarded ads you can choose to
+watch are offered in more places than between games; the ads section
+now says both. The banner comes from the same Google ad service as the
+other ads, so no new kind of information is collected, and nothing else
+changes.
+
+**Version 2.8 (2026-11-18) — Host (Online — optional private rooms)**
 
 Version 2.7 (2026-11-16) adds card decks you can buy in the Shop. A card deck is a
 design for the cards themselves that you wear over any table, and the Shop
@@ -647,11 +655,12 @@ player data. Google and Apple services are disclosed separately in this policy.
 The game is free because it shows ads, served by **Google's ad service
 (AdMob)**. Ads are limited by design:
 
-- Ads appear **only between games** — never while a hand is being
-  played.
-- **Rewarded ads are strictly optional**: you choose to watch one in
-  exchange for a cosmetic token, or you don't. Nothing in the game is
-  ever locked behind an ad.
+- The ads the game shows on its own appear as full-screen ads **between
+  games** and as **one small banner** at the top of the Home screen —
+  never while a hand is being played.
+- **Rewarded ads are strictly optional**: where the game offers one, you
+  choose to watch it in exchange for a cosmetic token, or you don't.
+  Nothing in the game is ever locked behind an ad.
 - **Offline, there are no ads at all**, and the game is fully playable.
 
 **There are no ads in Online Rooms, including between Games.** Online
