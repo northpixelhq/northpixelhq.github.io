@@ -2,11 +2,18 @@
 
 | Field | Value |
 |---|---|
-| **Version** | 2.9 |
+| **Version** | 2.10 |
 | **Effective date** | 2026-11-25 |
 | **Applies to** | Tres – Pusoy Dos (`dev.tres.app`) for Android and for iOS (iPhone and iPad). Online provisions apply only when you use Online, on Android or on iOS. |
 
-Version 2.9 corrects what this policy says about where ads appear. It
+Version 2.10 corrects what this policy says about ads when there is no
+internet connection. It said that offline there are no ads at all. With
+no internet connection no ad can be loaded, but an ad that was already
+loaded before the connection dropped may still be shown; the ads section
+now says so. Nothing changes in what is collected or who collects it,
+and nothing else changes.
+
+Version 2.9 (2026-11-25) corrects what this policy says about where ads appear. It
 said ads appear only between games. The game also shows one small banner
 at the top of its Home screen, and the rewarded ads you can choose to
 watch are offered in more places than between games; the ads section
@@ -661,7 +668,9 @@ The game is free because it shows ads, served by **Google's ad service
 - **Rewarded ads are strictly optional**: where the game offers one, you
   choose to watch it in exchange for a cosmetic token, or you don't.
   Nothing in the game is ever locked behind an ad.
-- **Offline, there are no ads at all**, and the game is fully playable.
+- **With no internet connection, no ad can be loaded**, and the game is
+  fully playable. An ad that was already loaded before the connection
+  dropped may still be shown.
 
 **There are no ads in Online Rooms, including between Games.** Online
 profile and Play Games recovery data are not used for advertising.
